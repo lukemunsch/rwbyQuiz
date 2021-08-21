@@ -1,7 +1,25 @@
+/*main body set up*/
+
 body {
     background-color: black;
 }
 
+nav {
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+
+/*set up the nav element for the main page*/
+nav a {
+    text-decoration: none;
+    font-size: 300%;
+    color: lightgray;
+}
+
+
+/* setting up the footer element*/
 footer {
     background-color: darkred;
     border: 4px outset red;
@@ -15,6 +33,7 @@ footer {
 
 .footer-text {
     color: lightgray;
+    padding-top: 30px;
 }
 .left-text {
     float: left;
