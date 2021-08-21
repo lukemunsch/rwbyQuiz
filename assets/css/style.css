@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+footer {
+    background-color: darkred;
+    border: 4px outset red;
+    height: 80px;
+    width: 70%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+}
+
+.footer-text {
+    color: lightgray;
+}
+.left-text {
+    float: left;
+    padding-left: 3rem;
+}
+
+.right-text {
+    float: right;
+    padding-right: 3rem;
+}
