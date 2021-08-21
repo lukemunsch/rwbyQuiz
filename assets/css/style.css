@@ -5,10 +5,11 @@ body {
 }
 
 nav {
+    
     font-weight: 400;
     text-align: center;
     position: relative;
-    top: 400px;
+    top: 500px;
 }
 
 /*set up the nav element for the main page*/
@@ -19,11 +20,11 @@ nav a {
 }
 
 
-/* setting up the footer element*/
+/* setting up the footer element for the index page*/
 footer {
     background-color: darkred;
     border: 4px outset red;
-    height: 80px;
+    height: 50px;
     width: 70%;
     text-align: center;
     position: fixed;
@@ -33,7 +34,7 @@ footer {
 
 .footer-text {
     color: lightgray;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .left-text {
     float: left;
