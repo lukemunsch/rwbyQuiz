@@ -4,19 +4,43 @@ body {
     background-color: black;
 }
 
-nav {
-    
-    font-weight: 400;
-    text-align: center;
-    position: relative;
-    top: 500px;
+/*main page image*/
+.mainImg {
+    width: 70vw;
+    height: auto;
+    margin-left: 15%;
 }
 
 /*set up the nav element for the main page*/
-nav a {
+#enterGame {
+    width: 100%;
+    position: fixed;
+    bottom: 70px;
+}
+
+#enterGame img {
+    position: absolute;
+    top: -100px;  
+    left: 45%; 
+    z-index: 3;
+}
+
+#enterGame a {
     text-decoration: none;
-    font-size: 300%;
+    font-size: 200%;
     color: lightgray;
+}
+
+#enterGame p {
+    text-shadow: #000;
+    text-align: center;
+    z-index: 1;
+    bottom: 10px;
+}
+
+.logo {
+    max-width: 150px;
+
 }
 
 
