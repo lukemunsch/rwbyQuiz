@@ -15,12 +15,12 @@ body {
 #enterGame {
     width: 100%;
     position: fixed;
-    bottom: 70px;
+    bottom: 50px;
 }
 
 #enterGame img {
     position: absolute;
-    top: -100px;  
+    top: -110px;  
     left: 45%; 
     z-index: 3;
 }
@@ -35,7 +35,6 @@ body {
     text-shadow: #000;
     text-align: center;
     z-index: 1;
-    bottom: 10px;
 }
 
 .logo {
@@ -68,4 +67,29 @@ footer {
 .right-text {
     float: right;
     padding-right: 3rem;
+}
+/*This is the game page*/
+
+#right-nav {
+    width: 30%;
+    background: red;
+    color: lightgray;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#right-nav ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+#right-nav li {
+    margin: 0 3rem;
+}
+
+.squareAction {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 0 10px;
 }

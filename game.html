@@ -13,18 +13,19 @@
     <title>RWBY Fan-Made Quiz</title>
 </head>
 <body>
-    <div>
-        <nav>
-            <a href="index.html">
-                <button id="index-page">Home</button>
-            </a>
-        </nav>
-        <button id="leaderboard">Leaderboard</button>
-        <button id="restart">Restart</button>
-        <button id="rules">Rules</button>
+    <div >
+        <a href="index.html">
+            <button class="squareAction" id="index-page">Home</button>
+        </a>
     </div>
-    <div>
-        <img>
+    <div id="right-nav">
+        <nav>
+            <ul>
+                <li>Leaderboard</li>
+                <li>Restart</li>
+                <li>Rules</li>
+            </ul>
+        </nav>
     </div>
     <div>
         <!--qustion div-->
@@ -32,11 +33,12 @@
     <div id="questionCounter">
     </div>
     <div>
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
-        <button id="answer4"></button>
+        <button class="answerButton" id="answer1"></button>
+        <button class="answerButton" id="answer2"></button>
+        <button class="answerButton" id="answer3"></button>
+        <button class="answerButton" id="answer4"></button>
     </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
