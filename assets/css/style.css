@@ -12,26 +12,24 @@ body {
 }
 
 /*set up the nav element for the main page*/
-#enterGame {
+.enterGame {
     width: 100%;
     position: fixed;
     bottom: 50px;
 }
 
-#enterGame img {
+.enterGame img {
     position: absolute;
-    top: -110px;  
-    left: 45%; 
+    box-sizing: border-box;
+    align-items: center;
+    top: -200px;
     z-index: 3;
 }
 
-#enterGame a {
+.enterGame p {
     text-decoration: none;
     font-size: 200%;
     color: lightgray;
-}
-
-#enterGame p {
     text-shadow: #000;
     text-align: center;
     z-index: 1;
@@ -68,15 +66,21 @@ footer {
     float: right;
     padding-right: 3rem;
 }
+
+
 /*This is the game page*/
 
 #right-nav {
-    width: 30%;
+    width: auto;
     background: red;
     color: lightgray;
+    float: right;
+    position: relative;
+    top: -50px;
     justify-content: space-between;
+    letter-spacing: 3px;
     align-items: center;
-    height: 100px;
+    height: 50px;
 }
 
 #right-nav ul {
@@ -84,12 +88,29 @@ footer {
     display: flex;
     float: right;
 }
+
 #right-nav li {
     margin: 0 3rem;
+    border-left: 10px solid black;
+    height: 100%;
+    font-size: 150%;
+    font-weight: 400;
 }
 
 .squareAction {
     width: 100px;
-    height: 100px;
+    height: 50px;
     margin: 10px 0 0 10px;
+    background-color: red;
+    color: lightgray;
+    text-align: center;
 }
+
+.squareAction p {
+    margin: 0 3rem;
+    border-left: 10px solid black;
+    height: 100%;
+    font-size: 150%;
+    font-weight: 400;  
+}
+
