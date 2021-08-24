@@ -2,6 +2,7 @@
 
 body {
     background-color: black;
+    color: lightgray;
 }
 
 /*main page image*/
@@ -16,14 +17,17 @@ body {
     width: 100%;
     position: fixed;
     bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.enterGame img {
-    position: absolute;
-    box-sizing: border-box;
-    align-items: center;
-    top: -200px;
-    z-index: 3;
+.enterGame img{
+    margin-left: 27%;
+}
+
+.enterGame a {
+    text-decoration: none;
 }
 
 .enterGame p {
@@ -114,23 +118,55 @@ footer {
     font-weight: 400;
 }
 
+/*This is the question area*/
+
 .questionField {
-    width: 40%;
+    width: 60%;
     height: 200px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid red;
     background-color: darkred;
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-left: 20%;
+    font-size: 150%;
+}
+
+/* this is the answer area*/
+
+#answerArea {
+    margin-top: 40px;
+    width: 40%;
     margin-left: 30%;
 }
 
-#answerArea {
-    width: auto;
-    margin-top: 50px;
-    margin-left: 15%;
+.answerButton {
+    width: 100%;
+    height: 75px;
+    border-radius: 30%;
+    margin-bottom: 5px;
+    color: lightgray;
+    font-size: 125%;
+    line-height: 0.2;
 }
 
-.answerButton {
-    width: 300px;
-    height: 100px;
-    margin: 0px 70px 50px 0rem;
+#answer1.answerButton {
+    border: 5px solid red;
+    background-color: black;
+}
+
+#answer2.answerButton {
+    border: 5px solid white;
+    background-color: black;
+}
+
+#answer3.answerButton {
+    border: 5px solid darkslategrey;
+    background-color: black;
+}
+
+#answer4.answerButton {
+    border: 5px solid yellow;
+    background-color: black;
 }
