@@ -90,7 +90,7 @@ footer {
 }
 
 #right-nav li {
-    margin: 0 3rem;
+    margin: 0 2rem;
     border-left: 10px solid black;
     height: 100%;
     font-size: 150%;
@@ -107,10 +107,30 @@ footer {
 }
 
 .squareAction p {
-    margin: 0 3rem;
+    margin: 15px;
     border-left: 10px solid black;
     height: 100%;
     font-size: 150%;
-    font-weight: 400;  
+    font-weight: 400;
 }
 
+.questionField {
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    background-color: darkred;
+    margin-top: 100px;
+    margin-left: 30%;
+}
+
+#answerArea {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+.answerButton {
+    width: 300px;
+    height: 100px;
+    margin: 0px 70px 50px 0rem;
+}

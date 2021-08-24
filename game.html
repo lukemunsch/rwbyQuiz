@@ -23,9 +23,9 @@
     <div id="right-nav">
         <nav>
             <ul>
-                <li>Leaderboard</li>
-                <li>Restart</li>
-                <li>Rules</li>
+                <li id="ldrbrd" class="modal">Leaderboard</li>
+                <li id="restart" class="modal">Restart</li>
+                <li id="rules" class="modal">Rules</li>
             </ul>
         </nav>
     </div>
@@ -35,10 +35,17 @@
     <div id="questionCounter">
     </div>
     <div>
-        <button class="answerButton" id="answer1"></button>
-        <button class="answerButton" id="answer2"></button>
-        <button class="answerButton" id="answer3"></button>
-        <button class="answerButton" id="answer4"></button>
+        <div class="questionField"></div>
+    </div>
+    <div id="answerArea">
+        <div class="leftBtn">
+            <button class="answerButton" id="answer1"></button>
+            <button class="answerButton" id="answer2"></button>
+        </div>
+        <div class="rightBtn">
+            <button class="answerButton" id="answer3"></button>
+            <button class="answerButton" id="answer4"></button>
+        </div>
     </div>
 
     <script src="assets/js/script.js"></script>
