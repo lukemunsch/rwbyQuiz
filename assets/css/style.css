@@ -143,7 +143,7 @@ footer {
 
 .answerButton {
     width: 100%;
-    height: 75px;
+    height: auto;
     border-radius: 30%;
     margin-bottom: 5px;
     color: lightgray;
@@ -151,9 +151,14 @@ footer {
     line-height: 0.2;
 }
 
+
 #answer1.answerButton {
     border: 5px solid red;
     background-color: black;
+}
+
+#answer1:hover {
+    background-color: rgb(50, 0, 0);
 }
 
 #answer2.answerButton {
@@ -161,12 +166,25 @@ footer {
     background-color: black;
 }
 
+#answer2:hover {
+    background-color: rgb(129, 148, 255);
+    color: rgb(240, 240, 240);
+}
+
 #answer3.answerButton {
     border: 5px solid darkslategrey;
     background-color: black;
 }
 
+#answer3:hover {
+    background-color: rgb(49, 25, 80);
+}
+
 #answer4.answerButton {
     border: 5px solid yellow;
     background-color: black;
+}
+
+#answer4:hover {
+    background-color: rgb(167, 114, 0);
 }
