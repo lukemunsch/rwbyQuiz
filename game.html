@@ -23,9 +23,9 @@
     <div id="right-nav">
         <nav>
             <ul>
-                <li id="ldrbrd" class="modal">Leaderboard</li>
-                <li id="restart" class="modal">Restart</li>
-                <li id="rules" class="modal">Rules</li>
+                <li id="ldrbrd">Leaderboard</li>
+                <li id="restart">Restart</li>
+                <li id="rules" id="show-modal">Rules</li>
             </ul>
         </nav>
     </div>
@@ -65,10 +65,27 @@
                 <p class="AnswerLtr">D</p>
                 <p class="answerText" answerNo="4">answer 4</p>
             </button>
-            
-        
+        </div>
     </div>
-
+    <div id="rules-modal" class="modal modal--hidden">
+        <div class="modal-content">
+            <div class="modal-close">
+                <h2>Rules</h2>
+                <ul>
+                    <li>Answer 20 questions about the RWBY universe</li>
+                    <li>You have three lives (indicated by Crescent Rose above)</li>
+                    <li>If you get an answer wrong you lose a life</li>
+                    <li>If you complete the quiz with lives remaining you get extra points:</li>
+                    <ul>
+                        <li>1 life = 1 point</li>
+                        <li>2 lives = 2 points</li>
+                        <li>3 lives = 5 points</li>
+                    </ul>
+                </ul>
+                <button id="close-rules"><em>OK!</em></button>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
