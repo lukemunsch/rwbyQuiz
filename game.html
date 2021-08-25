@@ -25,7 +25,8 @@
             <ul>
                 <li id="ldrbrd">Leaderboard</li>
                 <li id="restart">Restart</li>
-                <li id="rules" id="show-modal">Rules</li>
+                <li id="rules" id="show-modal" 
+                    onclick="rulesModalUp()">Rules</li>
             </ul>
         </nav>
     </div>
@@ -82,7 +83,7 @@
                         <li>3 lives = 5 points</li>
                     </ul>
                 </ul>
-                <button id="close-rules"><em>OK!</em></button>
+                <button onclick="rulesModalDown()" type="button"><em>OK!</em></button>
             </div>
         </div>
     </div>

@@ -97,6 +97,7 @@ footer {
     border-left: 10px solid black;
     height: 100%;
     font-size: 150%;
+    cursor: pointer;
 }
 
 .squareAction {
