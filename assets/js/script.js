@@ -155,54 +155,54 @@ let questions = [
     //30 questions
 
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Who does Adam Kill to become the new head of the White fang?",
+        answer: ["Sienna Khan", "Gira Belladonna", "General Ironwood", "Professor Lionheart"],
+        correctAnswer: 'Sienna Khan'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Which creature of Grimm does team RWBY take on to Complete their initiation?",
+        answer: ["Nevermore", "Deathstalker", "Mutant Beowulf", "The Leviathan"],
+        correctAnswer: 'Nevermore'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What Grimm does Blake and Sun have to deal with on the boat?",
+        answer: ["Sea Feilong", "Nuckelavee", "The Hound", "Sphinx"],
+        correctAnswer: 'Sea Feilong'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What doe Maria, Summer and Ruby have in common?",
+        answer: ["Silver Eyes", "They're All Short", "Super Speedy", "They are Related"],
+        correctAnswer: 'Silver Eyes'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is the name of the sepcial team that catches team RWBYQRNJ in Mantel?",
+        answer: ["Ace Ops", "White Rooks", "SnowAngels", "Happy Huntresses"],
+        correctAnswer: 'Ace Ops'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What do team RWBY discover about the more intelligent grimm that tries to capture Penny in Mantel?",
+        answer: ["They are all related to Ozpin", "They can't Talk", "They have long tongues", "Humans with Silver Eyes"],
+        correctAnswer: 'Humans with Silver Eyes'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Who does team RWBYRNJ meet after escaping the Apathy?",
+        answer: ["Jaunes Sister Safron", "Salem", "Team FNKY", "Sun Wukong"],
+        correctAnswer: 'Jaunes Sister Safron'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is Mecury doing when Emerald is talking to Team RWBY about their second round team?",
+        answer: ["Eating Pickles", "Sniffing Boots", "Stealing Money", "Kicking Ass in every way"],
+        correctAnswer: 'Sniffing Boots'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What creature transports Salem and her team to Mantel?",
+        answer: ["Dragon", "Whale", "Elephant", "Eagle"],
+        correctAnswer: 'Whale'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Pyrrha's semlblance allows her to control What?",
+        answer: ["Poles", "People", "Magnets", "Moods"],
+        correctAnswer: 'Magnets'
     },
     // 40 questions
 
