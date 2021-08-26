@@ -207,53 +207,53 @@ let questions = [
     // 40 questions
 
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is the name of the abandoned villiage team RNJR and Qrow fight Tyrian?",
+        answer: ["Vale", "Oniyuri", "Argus", "Mountain Glenn"],
+        correctAnswer: 'Oniyuri'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Which creature does Cinder seek help from after losing to Raven in the Haven Vault?",
+        answer: ["Bats", "Dogs", "Snakes", "Spiders"],
+        correctAnswer: 'Spiders'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Whose Semblence Allows them to deal damage based on their own sustained damage?",
+        answer: ["Yang", "Rwby", "Blake", "Weiss"],
+        correctAnswer: 'Yang'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Weiss is replaced by Whitley as what?",
+        answer: ["Princess", "Manager", "Heiress", "Director"],
+        correctAnswer: 'Heiress'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is Neptune most afraid of?",
+        answer: ["Sand", "Seaweed", "Fish", "Water"],
+        correctAnswer: 'Water'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is the Event that leads a grimm evasion into vale?",
+        answer: ["Train ram and bombs", "Semblence Explosion", "White fang infiltration", "Apathy Effect"],
+        correctAnswer: 'Train ram and bombs'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"Jaune and Pyrrha's tem attack is called what?",
+        answer: ["Flower Power", "Twin Lancers", "Arkos", "ShieldBash"],
+        correctAnswer: 'Arkos'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What is the other inherited Semblence of the Schnee family along side Glyphs?",
+        answer: ["Stopping Power", "Speed", "Spirit Doubles", "Summoning"],
+        correctAnswer: 'Summoning'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
-        correctAnswer: ''
+        question:"What type of Faunus is Tyrian?",
+        answer: ["Cat", "Rabbit", "Monkey", "Scorpion"],
+        correctAnswer: 'Scorpion'
     },
     {
-        question:"?",
-        answer: ["", "", "", ""],
+        question:"What is the one peice of advise Ambrosius gives to team RWBYP?",
+        answer: ["Stir it continuously", "Eat it with scones", "Do not fall", "Always look forward"],
         correctAnswer: ''
     },
     //50 questions
