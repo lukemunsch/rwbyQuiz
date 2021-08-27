@@ -165,7 +165,6 @@ footer {
     margin-bottom: 5px;
     color: lightgray;
     font-size: 125%;
-    line-height: 0.2;
     padding: 10px 0;
 }
 
@@ -251,6 +250,29 @@ footer {
     margin-left: 170px;
 }
 
-.modal--hidden {
-    display: none;
+
+/*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
+@media screen and (max-width:1280px) {
+    
+    
+    #answerArea {
+        margin-top: 10px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    
+    .answerButton {
+        width: 100%;
+        height: auto;
+        border-radius: 30%;
+        margin-bottom: 5px;
+        color: lightgray;
+        font-size: 100%;
+        padding: 5px 0;
+    }
 }
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:320px) {
