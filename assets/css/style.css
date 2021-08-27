@@ -335,3 +335,61 @@ footer {
         margin-bottom: 3px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    #right-nav {
+        width: auto;
+        background: red;
+        letter-spacing: 1px;
+    }
+    
+    #right-nav ul {
+        list-style-type: none;
+        display: flex;
+        float: right;
+    }
+    
+    #right-nav li {
+        margin: 0 .5rem 0 .5rem;
+        font-size: 100%;
+    }
+    
+    .squareAction {
+        letter-spacing: 0px;
+    }
+    
+    .squareAction p {
+        margin: .5rem;
+    }
+
+    .questionField {
+        width: 96%;
+        margin-top: 10px;
+        margin-left: 2%;
+        font-size: 100%;
+    }
+
+    #lifelineCount {
+        height: 20px;
+        margin-top: 20px;
+    }
+    
+    .lifeline img {
+        height: 30px;
+        margin-right: 5px;
+    }
+    
+    #answerArea {
+        margin-top: 10px;
+        width: 96%;
+        margin-left: 2%;
+    }
+    
+    .answerButton {
+        width: 100%;
+        margin-bottom: 7px;
+        font-size: 100%;
+        padding: 1px 0;
+    }
+
+}
