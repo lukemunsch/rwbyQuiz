@@ -1,8 +1,12 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=STIX+Two+Math&display=swap');
+
 /*main body set up*/
 
 body {
     background-color: black;
     color: lightgray;
+    font-family: 'STIX Two Math', sans-serif;
 }
 
 /*main page image*/
@@ -74,6 +78,7 @@ footer {
 /*This is the game page*/
 
 #right-nav {
+    font-family: 'Cuprum', Arial, sans-serif;
     width: auto;
     background: red;
     color: lightgray;
@@ -81,7 +86,7 @@ footer {
     position: relative;
     top: -50px;
     justify-content: space-between;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     align-items: center;
     height: 50px;
 }
@@ -93,7 +98,7 @@ footer {
 }
 
 #right-nav li {
-    margin: 0 2rem;
+    margin: 0 3rem;
     border-left: 10px solid black;
     height: 100%;
     font-size: 150%;
@@ -101,6 +106,7 @@ footer {
 }
 
 .squareAction {
+    font-family: 'Cuprum', Arial, sans-serif;
     width: auto;
     background: red;
     color: lightgray;
@@ -122,6 +128,7 @@ footer {
 /*This is the question area*/
 
 .questionField {
+    font-family: 'STIX Two Math', Arial, sans-serif;
     width: 60%;
     height: 130px;
     text-align: center;
@@ -153,6 +160,7 @@ footer {
 /* this is the answer area*/
 
 #answerArea {
+    font-family: 'STIX Two Math', Arial, sans-serif;
     margin-top: 10px;
     width: 40%;
     margin-left: 30%;
@@ -165,7 +173,7 @@ footer {
     margin-bottom: 5px;
     color: lightgray;
     font-size: 125%;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 
@@ -253,7 +261,22 @@ footer {
 
 /*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
 @media screen and (max-width:1280px) {
+    .questionField {
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 10%;
+        font-size: 120%;
+    }
+
+    #lifelineCount {
+        height: 40px;
+        margin-top: 25px;
+    }
     
+    .lifeline img {
+        height: 70px;
+        margin-right: 5px;
+    }
     
     #answerArea {
         margin-top: 10px;
@@ -263,16 +286,52 @@ footer {
     
     .answerButton {
         width: 100%;
-        height: auto;
-        border-radius: 30%;
-        margin-bottom: 5px;
-        color: lightgray;
+        margin-bottom: 7px;
         font-size: 100%;
-        padding: 5px 0;
+        padding: 2px 0;
     }
 }
 
 @media screen and (max-width:768px) {
+    #right-nav {
+        letter-spacing: 5px;
+    }
+    
+    #right-nav li {
+        margin: 0 1.2rem;
+        font-size: 120%;
+    }
+    
+    .squareAction p {
+        font-size: 120%;
+        letter-spacing: 5px;
+    }
+
+    .lifeline img {
+        height: 40px;
+        margin-right: 3px;
+    }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:500px) {
+    .questionField {
+        width: 90%;
+        margin-top: 10px;
+        margin-left: 5%;
+        font-size: 120%;
+    }
+    
+    .lifeline img {
+        height: 40px;
+    }
+    
+    #answerArea {
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .answerButton {
+        margin-bottom: 3px;
+    }
+}
