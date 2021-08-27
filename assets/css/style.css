@@ -11,16 +11,17 @@ body {
 
 /*main page image*/
 .mainImg {
-    width: 70vw;
+    width: 80vw;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 /*set up the nav element for the main page*/
 .enterGame {
     width: 100%;
     position: fixed;
-    bottom: 50px;
+    line-height: 0.1;
+    bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,6 +294,12 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+
+    .mainImg {
+        
+        background: url(../images/rwbyhighresolutionlogo-min.jpeg) top center / cover no-repeat;
+    }
+
     #right-nav {
         letter-spacing: 5px;
     }
