@@ -15,7 +15,9 @@ body {
     height: 500px;
 }
 
-.emptydiv {
+.enterGame p {
+    background-color: black;
+    width: auto;
 }
 
 /*set up the nav element for the main page*/
@@ -299,7 +301,7 @@ footer {
 
     .mainImg {   
         background: url(../images/rwbyhighresolutionlogo-min.jpeg) center center / cover no-repeat;
-        height: 500px;
+        height: 450px;
     }
 
     #right-nav {
@@ -346,6 +348,11 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+    .enterGame p {
+        font-size: 150%;
+        line-height: 5px;
+    }
+    
     #right-nav {
         width: auto;
         background: red;
