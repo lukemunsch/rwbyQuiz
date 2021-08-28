@@ -12,20 +12,16 @@ body {
 /*main page image*/
 .mainImg {
     background: #000 url(../images/rwby-logo-min.png) center center / cover no-repeat;
-    height: 500px;
-}
-
-.enterGame p {
-    background-color: black;
-    width: auto;
+    height: 550px;
 }
 
 /*set up the nav element for the main page*/
 .enterGame {
     width: 100%;
     position: fixed;
+
     line-height: 0.1;
-    bottom: 40px;
+    bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,9 +39,10 @@ body {
     text-decoration: none;
     font-size: 200%;
     color: lightgray;
-    text-shadow: #000;
     text-align: center;
-    z-index: 1;
+    text-shadow: #000 3px 3px;
+    width: 400px;
+    height: 20px;
 }
 
 .logo {
@@ -78,7 +75,6 @@ footer {
     float: right;
     padding-right: 3rem;
 }
-
 
 /*This is the game page*/
 
