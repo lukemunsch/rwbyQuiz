@@ -1,173 +1,272 @@
 let questions = [
     {
         question: "What body part did Yang lose in her first meeting with Adam?",
-        answer: ["Right arm", "Left leg", "Her hair", "Wait... WHAT!!!"],
-        correctAnswer: 'Right arm'
+        answer1: "Right arm",
+        answer2: "Left leg", 
+        answer3: "Her hair", 
+        answer4: "Wait... WHAT!!!",
+        correctAnswer: 1
     },
     {
         question: "What is the nickname given to Jaune Arc in the first episode?",
-        answer: ["Slugger", "Ladies-Man", "Vomit-Boy", "Useless-stick"],
-        correctAnswer: 'Vomit-boy'
+        answer1: "Slugger", 
+        answer2: "Ladies-Man", 
+        answer3: "Vomit-Boy", 
+        answer4: "Useless-stick",
+        correctAnswer: 1
     },
     {
         question: "What happened to the moon?",
-        answer: ["Always been like that", "Gods destroyed it", "Grimm Attack", "Asteroid Impact"],
-        correctAnswer: 'Gods destroyed it'
+        answer1: "Always been like that",
+        answer2: "Gods destroyed it",
+        answer3: "Grimm Attack",
+        answer4: "Asteroid Impact",
+        correctAnswer: 2
     },
     {
         question:"Which character is not based on a Fairy Tale?",
-        answer: ["Ren", "Ruby", "Hazel", "Weis"],
-        correctAnswer: 'Ren'
+        answer1: "Ren",
+        answer2: "Ruby",
+        answer3: "Hazel",
+        answer4: "Weis",
+        correctAnswer: 1
     },
     {
         question:"Which character does not use a scythe weapon?",
-        answer: ["Ruby Rose", "Qrow Branwen", "Maria Calavera", "Glynda Goodwitch"],
-        correctAnswer: 'Glynda Goodwitch'
+        answer1: "Ruby Rose",
+        answer2: "Qrow Branwen",
+        answer3: "Maria Calavera",
+        answer4: "Glynda Goodwitch",
+        correctAnswer: 4
     },
     {
         question:"Which locker belongs to Jaune?",
-        answer: ["616", "636", "239", "345"],
-        correctAnswer: '636'
+        answer1: "616",
+        answer2: "636",
+        answer3: "239",
+        answer4: "345",
+        correctAnswer: 2
     },
     {
         question:"Where was Sunn raised?",
-        answer: ["Mistral", "Vacuo", "Mantle", "Vale"],
-        correctAnswer: 'Vacuo'
+        answer1: "Mistral",
+        answer2: "Vacuo",
+        answer3: "Mantle",
+        answer4: "Vale",
+        correctAnswer: 2
     },
     {
         question:"Who is the mother of Ruby?",
-        answer: ["Summer", "Willow", "Kali", "rAVEN"],
-        correctAnswer: 'Summer'
+        answer1: "Summer",
+        answer2: "Willow",
+        answer3: "Kali",
+        answer4: "Raven",
+        correctAnswer: 1
     },
     {
         question:"Who is the odd One out?",
-        answer: ["ozma", "Oscar", "Ozpin", "Oobleck"],
-        correctAnswer: 'Oobleck'
+        answer1: "ozma",
+        answer2: "Oscar",
+        answer3: "Ozpin",
+        answer4: "Oobleck",
+        correctAnswer: 4
     },
     {
-        question:"Pyrrha Nikos' weapon is what?",
-        answer: ["Sword-lance and shield", "Warhammer", "Twin pistols", "Rifle trident"],
-        correctAnswer: 'Sword-lance and shield'
+        question:"Pyrrha Nikos' weapon of choice is what?",
+        answer1: "Sword-lance and shield",
+        answer2: "Warhammer",
+        answer3: "Twin pistols",
+        answer4: "Rifle trident",
+        correctAnswer: 1
     },
     //10 questions
     {
         question:"How many teammembers make up a standard team roster?",
-        answer: ["3", "4", "5", "8"],
-        correctAnswer: '4'
+        answer1: "3",
+        answer2: "4",
+        answer3: "5",
+        answer4: "8",
+        correctAnswer: 2
     },
     {
         question:"Who is the headmaster of Beacon academy?",
-        answer: ["Ozpin", "Ironwood", "Taiyang", "Qrow"],
-        correctAnswer: 'Ozpin'
+        answer1: "Ozpin",
+        answer2: "Ironwood",
+        answer3: "Taiyang",
+        answer4: "Qrow",
+        correctAnswer: 1
     },
     {
         question:"What is the connection between Raven and Qrow?",
-        answer: ["Husband and Wife", "Twin Siblings", "Father and Daughter", "Mother and Son"],
-        correctAnswer: 'Twin Siblings'
+        answer1: "Husband and Wife",
+        answer2: "Twin Siblings",
+        answer3: "Father and Daughter",
+        answer4: "Mother and Son",
+        correctAnswer: 2
     },
     {
         question:"Who was next in line to be the Fall maiden?",
-        answer: ["Pyrrha", "Nora", "Yang", "Blake"],
-        correctAnswer: 'Pyrrha'
+        answer1: "Pyrrha",
+        answer2: "Nora",
+        answer3: "Yang",
+        answer4: "Blake",
+        correctAnswer: 1
     },
     {
         question:"Which Member of RWBY lived in Menagerie?",
-        answer: ["Ruby", "Weiss", "Blake", "Yang"],
-        correctAnswer: 'Blake'
+        answer1: "Ruby",
+        answer2: "Weiss",
+        answer3: "Blake",
+        answer4: "Yang",
+        correctAnswer: 3
     },
     {
         question:"What did team RWBY receive in the post from Taiyang?",
-        answer: ["A load of washing", "A dog and his food", "Weapon repair kits", "Gushy family letters"],
-        correctAnswer: 'A dog and his food'
+        answer1: "A load of washing",
+        answer2: "A dog and his food",
+        answer3: "Weapon repair kits",
+        answer4: "Gushy family letters",
+        correctAnswer: 2
     },
     {
         question:"Adam's surname is which member of the zodiac?",
-        answer: ["Capricorn", "Virgo", "Taurus", "Leo"],
-        correctAnswer: 'Taurus'
+        answer1: "Capricorn",
+        answer2: "Virgo",
+        answer3: "Taurus",
+        answer4: "Leo",
+        correctAnswer: 3
     },
     {
-        question:"Who is robbing stores for their dust supplies?",
-        answer: ["Roman", "Sun", "Cardin", "Velvet"],
-        correctAnswer: 'Roman'
+        question:"Who is robbing stores in Vale for their dust supplies?",
+        answer1: "Roman",
+        answer2: "Sun",
+        answer3: "Cardin",
+        answer4: "Velvet",
+        correctAnswer: 1
     },
     {
         question:"Who is the silent partner to Roman Torchwick?",
-        answer: ["Neo", "Cinder", "Emerald", "Salem"],
-        correctAnswer: 'Neo'
+        answer1: "Neo",
+        answer2: "Cinder",
+        answer3: "Emerald",
+        answer4: "Salem",
+        correctAnswer: 1
     },
     {
         question:"Which professor has probably had too many cups of coffee?",
-        answer: ["Professor Port", "Doctor Oobleck", "Professor Goodwitch", "Professor Ozpin"],
-        correctAnswer: 'Doctor Oobleck'
+        answer1: "Professor Port",
+        answer2: "Professor... Doctor Oobleck",
+        answer3: "Professor Goodwitch",
+        answer4: "Professor Ozpin",
+        correctAnswer: 2
     },
     //20 question
 
     {
-        question:"In the Vale fighting festival, who fights against Pyrrha?",
-        answer: ["Sunn", "Emerald", "Yang", "Penny"],
-        correctAnswer: 'Penny'
+        question:"In the Vale fighting festival, who fights against Pyrrha in the final match?",
+        answer1: "Sunn",
+        answer2: "Emerald",
+        answer2: "Yang",
+        answer2: "Penny",
+        correctAnswer: 4
     },
     {
         question:"Who is the only artificial being who can generate aura?",
-        answer: ["Penny Polendina", "Nora Valyrie", "Weiss Schnee", "Cinder Fall"],
-        correctAnswer: 'Penny Polendina'
+        answer1: "Penny Polendina",
+        answer2: "Nora Valyrie",
+        answer3: "Weiss Schnee",
+        answer4: "Cinder Fall",
+        correctAnswer: 1
     },
     {
         question:"How many gods were there when Salem los her true love?",
-        answer: ["4", "3", "2", "1"],
-        correctAnswer: '2'
+        answer1: "4",
+        answer2: "3",
+        answer3: "2",
+        answer4: "1",
+        correctAnswer: 3
     },
     {
         question:"What is the main produce of Weiss' family business?",
-        answer: ["Food", "Guns", "Clothes", "Dust"],
-        correctAnswer: 'Dust'
+        answer1: "Food",
+        answer2: "Guns",
+        answer3: "Clothes",
+        answer4: "Dust",
+        correctAnswer: 4
     },
     {
         question:"What is located in the vault under Haven Academy?",
-        answer: ["Staff of Creation", "Relic of Knowledge", "The Fall Maiden", "Ozpin's Favourite Books"],
-        correctAnswer: 'Relic of Knowledge'
+        answer1: "Staff of Creation",
+        answer2: "Relic of Knowledge",
+        answer3: "The Fall Maiden",
+        answer4: "Ozpin's Favourite Books",
+        correctAnswer: 2
     },
     {
         question:"What is the alter ego of Maria Calavera?",
-        answer: ["Grimm Reaper", "Shorty-Pants", "Spring Maiden", "Dust Sorceress"],
+        answer1: "Grimm Reaper",
+        answer2: "Shorty-Pants",
+        answer3: "Spring Maiden",
+        answer4: "Dust Sorceress",
         correctAnswer: 'Grimm Reaper'
     },
     {
-        question:"Yang leaves to find Ruby, But who is it she is actually looking for?",
-        answer: ["Qrow", "Raven", "Robyn", "Yuma"],
-        correctAnswer: 'Raven'
+        question:"Yang leaves to find Ruby after the fall of Beacon, but who is it she is actually looking for?",
+        answer1: "Qrow",
+        answer2: "Raven",
+        answer3: "Robyn",
+        answer4: "Yuma",
+        correctAnswer: 2
     },
     {
         question:"What is the team name Nora creates when rwby joins them?",
-        answer: ["JNRR", "RNJR", "NRJR", "Where's the P gone?"],
-        correctAnswer: 'JNRR'
+        answer1: "JNRR",
+        answer2: "RNJR",
+        answer3: "NRJR",
+        answer4: "Where's the P gone?",
+        correctAnswer: 1
     },
     {
         question:"Where does the battle between Cinder and Pyrrha come to a dramatic end?",
-        answer: ["Amity Colusseum", "Beacon Tower", "Haven Academy", "Vale Docks"],
-        correctAnswer: 'Beacon Tower'
+        answer1: "Amity Colusseum",
+        answer2: "Beacon Tower",
+        answer3: "Haven Academy",
+        answer4: "Vale Docks",
+        correctAnswer: 2
     },
     {
         question:"What does Oscar do before Ozpin joins him?",
-        answer: ["Student", "Beggar", "Shop clerk", "Farmhand"],
-        correctAnswer: 'Farmhand'
+        answer1: "Student",
+        answer2: "Beggar",
+        answer3: "Shop clerk",
+        answer4: "Farmhand",
+        correctAnswer: 4
     },
     //30 questions
 
     {
         question:"Who does Adam Kill to become the new head of the White fang?",
-        answer: ["Sienna Khan", "Gira Belladonna", "General Ironwood", "Professor Lionheart"],
-        correctAnswer: 'Sienna Khan'
+        answer1: "Sienna Khan",
+        answer2: "Gira Belladonna",
+        answer3: "General Ironwood",
+        answer4: "Professor Lionheart",
+        correctAnswer: 1
     },
     {
         question:"Which creature of Grimm does team RWBY take on to Complete their initiation?",
-        answer: ["Nevermore", "Deathstalker", "Mutant Beowulf", "The Leviathan"],
-        correctAnswer: 'Nevermore'
+        answer1: "Nevermore",
+        answer2: "Deathstalker",
+        answer3: "Mutant Beowulf",
+        answer4: "The Leviathan",
+        correctAnswer: 1
     },
     {
         question:"What Grimm does Blake and Sun have to deal with on the boat?",
-        answer: ["Sea Feilong", "Nuckelavee", "The Hound", "Sphinx"],
-        correctAnswer: 'Sea Feilong'
+        answer1: "Sea Feilong",
+        answer2: "Nuckelavee",
+        answer3: "The Hound",
+        answer4: "Sphinx",
+        correctAnswer: 1
     },
     {
         question:"What doe Maria, Summer and Ruby have in common?",
@@ -263,3 +362,11 @@ let questions = [
 
 
 //starting the quiz by clicking the link onn the main page to load questions as soon as the page opens.
+const question = document.getElementById('question');
+const answers = Array.from( document.getElementsByClassName('answerText'));
+
+let currentQuestion = ();
+let acceptingAnswer = true;
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
