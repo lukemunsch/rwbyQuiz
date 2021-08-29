@@ -3,11 +3,7 @@
 
 /*main body set up*/
 
-:root {
-    --hue-neutral: #000;
-    --hue-correct: rgb(5, 153, 0);
-    --hue-incorrect: rgb(255, 0, 0);
-}
+
 
 body {
     --hue: var(--hue-neutral);
@@ -193,7 +189,7 @@ footer {
 }
 
 #answer1:hover {
-    border: 10px outset red;
+    background-color: rgb(95, 0, 0);
 }
 
 #answer2.answerButton {
@@ -202,8 +198,8 @@ footer {
 }
 
 #answer2:hover {
-    border: 10px outset white;
-    color: rgb(240, 240, 240);
+    background-color: rgb(217, 244, 255);
+    color: rgb(0, 0, 0);
 }
 
 #answer3.answerButton {
@@ -212,7 +208,7 @@ footer {
 }
 
 #answer3:hover {
-    border: 10px outset darkslategrey
+    background-color:rgb(46, 46, 46)
 }
 
 #answer4.answerButton {
@@ -221,7 +217,15 @@ footer {
 }
 
 #answer4:hover {
-    border: 10px outset yellow;
+    background-color: rgb(131, 122, 0)
+}
+
+.answerButton.correct {
+    background-color: rgb(0, 140, 0)
+}
+
+.answerButton.incorrect {
+    background-color: rgb(85, 0, 0);
 }
 
 /*Modal for rules popup on screen*/
