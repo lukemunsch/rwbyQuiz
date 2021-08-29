@@ -174,6 +174,7 @@ footer {
 
 .answerButton {
     width: 100%;
+    background-color: #000;
     height: auto;
     border-radius: 30%;
     margin-bottom: 5px;
@@ -185,7 +186,6 @@ footer {
 
 #answer1.answerButton {
     border: 5px solid red;
-    background-color: black;
 }
 
 #answer1:hover {
@@ -194,7 +194,6 @@ footer {
 
 #answer2.answerButton {
     border: 5px solid white;
-    background-color: black;
 }
 
 #answer2:hover {
@@ -204,7 +203,6 @@ footer {
 
 #answer3.answerButton {
     border: 5px solid darkslategrey;
-    background-color: black;
 }
 
 #answer3:hover {
@@ -213,18 +211,17 @@ footer {
 
 #answer4.answerButton {
     border: 5px solid yellow;
-    background-color: black;
 }
 
 #answer4:hover {
     background-color: rgb(131, 122, 0)
 }
 
-.answerButton.correct {
+.correct {
     background-color: rgb(0, 140, 0)
 }
 
-.answerButton.incorrect {
+.incorrect {
     background-color: rgb(85, 0, 0);
 }
 
