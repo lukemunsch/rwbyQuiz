@@ -423,39 +423,52 @@ let availableQuestions = [];
 const correctBonus = 1;
 const maxQuestions = 20;
 
+//this is what we want to happen when the page is loaded
 function startGame(){
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log(availableQuestions);
     nextQuestion();
 };
 
+//this will pull a new question from the available array of questinos
 function nextQuestion(){
+    if(availableQuestions === 0 || questionCounter >= maxQuestions){
+        return window.location.assign('/end.html');
+    }
+    
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
         question.innerText = currentQuestion.question;
 
+        //this will add the corresposnding question's answers to the correct buttons
         answers.forEach( answer => {
             const number = answer.dataset['answer'];
             answer.innerText = currentQuestion['answer' + number];
         });
 
+        //removing current question from the available list
         availableQuestions.splice(questionIndex, 1);
 
+        //this allows the correct answer to be selected if there is a question
         acceptingAnswer = true;
 };
 
+
+//this is adding a click listener to the answers to generate a new question
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
-        console.log(e.target);
+
+        //if no answer is required, return nothing
             if(!acceptingAnswer) return;
 
+        //this will check if the answer selected is correct
             acceptingAnswer = false;
             const selectedOption = e.target;
-            const selectedAnswer = selectedOption.dataset['number']
+            const selectedAnswer = selectedOption.dataset['number'];
 
+            //after clicking an answer this will generate a new one
             console.log(selectedAnswer);
             nextQuestion();
     });
