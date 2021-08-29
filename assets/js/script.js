@@ -259,3 +259,35 @@ let questions = [
     //50 questions
 ]
 
+//starting the quiz by clicking the link onn the main page to load questions as soon as the page opens.
+
+const startGame = document.getElementById('startButton');
+let questionTextField = document.getElementById('questionField');
+let questionText = document.getElementById('question')
+let answerSet = document.getElementById('anwerArea')
+
+let randomQuestion, currentQuestion
+
+startGame.addEventListener('click', startQuiz);
+
+//function to run the quiz programme
+function startQuiz(){
+    console.log('hello world');
+    randomQuestion = questions.sort(Math.floor(Math.random()*50)+1);
+    currentQuestion = 0;
+    nextQuestion()
+}
+
+//this is used to get another question from the list of options and replace the existing
+function nextQuestion(){
+    showQuestion(randomQuestion[currentQuestion]);
+}
+
+function showQuestion(question){
+    questionText.innerText = question.question;
+}
+
+//this is used to select the answer from the buttons
+function selectAnswer(){
+
+}
