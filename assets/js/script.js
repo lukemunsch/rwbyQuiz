@@ -440,6 +440,20 @@ function getNewQuestion(){
         answers.forEach( answer => {
             const number = answer.dataset['answer'];
             answer.innerText = currentQuestion['answer' + number];
-        })
-}
+        });
+
+        availableQuestions.splice(questionIndex, 1);
+
+        acceptingAnswer = true;
+};
+
+answers.forEach(answer => {
+    answer.addEventListener('click', e => {
+        console.log(e.target);
+    })
+});
+
+
+
+startGame();
 
