@@ -270,103 +270,176 @@ let questions = [
     },
     {
         question:"What doe Maria, Summer and Ruby have in common?",
-        answer: ["Silver Eyes", "They're All Short", "Super Speedy", "They are Related"],
-        correctAnswer: 'Silver Eyes'
+        answer1: "Silver Eyes",
+        answer2: "They're All Short",
+        answer3: "Super Speedy",
+        answer4: "They are Related",
+        correctAnswer: 1
     },
     {
         question:"What is the name of the sepcial team that catches team RWBYQRNJ in Mantel?",
-        answer: ["Ace Ops", "White Rooks", "SnowAngels", "Happy Huntresses"],
-        correctAnswer: 'Ace Ops'
+        answer1: "SnowAngels", 
+        answer2: "White Rooks",
+        answer3: "Ace Ops",
+        answer4: "Happy Huntresses",
+        correctAnswer: 3
     },
     {
         question:"What do team RWBY discover about the more intelligent grimm that tries to capture Penny in Mantel?",
-        answer: ["They are all related to Ozpin", "They can't Talk", "They have long tongues", "Humans with Silver Eyes"],
-        correctAnswer: 'Humans with Silver Eyes'
+        answer1: "They are all related to Ozpin",
+        answer2: "They can't Talk",
+        answer2: "They have long tongues",
+        answer2: "Humans with Silver Eyes",
+        correctAnswer: 4
     },
     {
         question:"Who does team RWBYRNJ meet after escaping the Apathy?",
-        answer: ["Jaunes Sister Safron", "Salem", "Team FNKY", "Sun Wukong"],
-        correctAnswer: 'Jaunes Sister Safron'
+        answer1: "Jaunes Sister Safron",
+        answer2: "Salem",
+        answer3: "Team FNKY",
+        answer4: "Sun Wukong",
+        correctAnswer: 1
     },
     {
         question:"What is Mecury doing when Emerald is talking to Team RWBY about their second round team?",
-        answer: ["Eating Pickles", "Sniffing Boots", "Stealing Money", "Kicking Ass in every way"],
-        correctAnswer: 'Sniffing Boots'
+        answer1: "Eating Pickles",
+        answer2: "Sniffing Boots",
+        answer3: "Stealing Money",
+        answer4: "Kicking Ass in every way",
+        correctAnswer: 2
     },
     {
         question:"What creature transports Salem and her team to Mantel?",
-        answer: ["Dragon", "Whale", "Elephant", "Eagle"],
-        correctAnswer: 'Whale'
+        answer1: "Dragon",
+        answer2: "Whale",
+        answer3: "Elephant",
+        answer4: "Eagle",
+        correctAnswer: 2
     },
     {
-        question:"Pyrrha's semlblance allows her to control What?",
-        answer: ["Poles", "People", "Magnets", "Moods"],
-        correctAnswer: 'Magnets'
+        question:"Pyrrha's semblance allows her to control What?",
+        answer1: "Poles",
+        answer2: "People",
+        answer3: "Magnets",
+        answer4: "Moods",
+        correctAnswer: 3
     },
     // 40 questions
 
     {
         question:"What is the name of the abandoned villiage team RNJR and Qrow fight Tyrian?",
-        answer: ["Vale", "Oniyuri", "Argus", "Mountain Glenn"],
-        correctAnswer: 'Oniyuri'
+        answer1: "Vale",
+        answer2: "Oniyuri",
+        answer3: "Argus",
+        answer4: "Mountain Glenn",
+        correctAnswer: 2
     },
     {
         question:"Which creature does Cinder seek help from after losing to Raven in the Haven Vault?",
-        answer: ["Bats", "Dogs", "Snakes", "Spiders"],
-        correctAnswer: 'Spiders'
+        answer1: "Bats",
+        answer2: "Dogs",
+        answer3: "Snakes",
+        answer4: "Spiders",
+        correctAnswer: 4
     },
     {
         question:"Whose Semblence Allows them to deal damage based on their own sustained damage?",
-        answer: ["Yang", "Rwby", "Blake", "Weiss"],
-        correctAnswer: 'Yang'
+        answer1: "Yang",
+        answer2: "Rwby",
+        answer3: "Blake",
+        answer4: "Weiss",
+        correctAnswer: 1
     },
     {
-        question:"Weiss is replaced by Whitley as what?",
-        answer: ["Princess", "Manager", "Heiress", "Director"],
-        correctAnswer: 'Heiress'
+        question:"After an outburst at a party, Weiss is replaced by Whitley as what?",
+        answer1: "Princess",
+        answer2: "Manager",
+        answer3: "Heiress",
+        answer4: "Director",
+        correctAnswer: 3
     },
     {
         question:"What is Neptune most afraid of?",
-        answer: ["Sand", "Seaweed", "Fish", "Water"],
-        correctAnswer: 'Water'
+        answer1: "Sand",
+        answer2: "Seaweed",
+        answer3: "Fish",
+        answer4: "Water",
+        correctAnswer: 4
     },
     {
         question:"What is the Event that leads a grimm evasion into vale?",
-        answer: ["Train ram and bombs", "Semblence Explosion", "White fang infiltration", "Apathy Effect"],
-        correctAnswer: 'Train ram and bombs'
+        answer1: "Train ram and bombs",
+        answer2: "Semblence Explosion",
+        answer3:  "White fang infiltration",
+        answer4: "Apathy Effect",
+        correctAnswer: 1
     },
     {
         question:"Jaune and Pyrrha's tem attack is called what?",
-        answer: ["Flower Power", "Twin Lancers", "Arkos", "ShieldBash"],
-        correctAnswer: 'Arkos'
+        answer1: "Flower Power",
+        answer2: "Twin Lancers",
+        answer3: "Arkos",
+        answer4: "ShieldBash",
+        correctAnswer: 3
     },
     {
         question:"What is the other inherited Semblence of the Schnee family along side Glyphs?",
-        answer: ["Stopping Power", "Speed", "Spirit Doubles", "Summoning"],
-        correctAnswer: 'Summoning'
+        answer1: "Stopping Power",
+        answer2: "Speed",
+        answer3: "Spirit Doubles",
+        answer4: "Summoning",
+        correctAnswer: 4
     },
     {
         question:"What type of Faunus is Tyrian?",
-        answer: ["Cat", "Rabbit", "Monkey", "Scorpion"],
-        correctAnswer: 'Scorpion'
+        answer1: "Cat",
+        answer2: "Rabbit",
+        answer3: "Monkey",
+        answer4: "Scorpion",
+        correctAnswer: 4
     },
     {
         question:"What is the one peice of advise Ambrosius gives to team RWBYP?",
-        answer: ["Stir it continuously", "Eat it with scones", "Do not fall", "Always look forward"],
-        correctAnswer: ''
+        answer1: "Stir it continuously",
+        answer2: "Eat it with scones",
+        answer3: "Do not fall",
+        answer4: "Always look forward",
+        correctAnswer: 3
     },
     //50 questions
 ]
 //defining the variables
 
-
-
-//starting the quiz by clicking the link onn the main page to load questions as soon as the page opens.
 const question = document.getElementById('question');
 const answers = Array.from( document.getElementsByClassName('answerText'));
 
-let currentQuestion = ();
+let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+//creating constants
+const correctBonus = 1;
+const maxQuestions = 20;
+
+function startGame(){
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log(availableQuestions);
+    getNewQuestion();
+};
+
+function getNewQuestion(){
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerText = currentQuestion.question;
+
+        answers.forEach( answer => {
+            const number = answer.dataset['answer'];
+            answer.innerText = currentQuestion['answer' + number];
+        })
+}
+
