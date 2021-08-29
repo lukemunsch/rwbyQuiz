@@ -436,8 +436,11 @@ function nextQuestion(){
     if(availableQuestions === 0 || questionCounter >= maxQuestions){
         return window.location.assign('/end.html');
     }
-    
+
     questionCounter++;
+    let questionNo = document.getElementById('questionCounter');
+    questionNo = `Question: /20`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
         question.innerText = currentQuestion.question;
@@ -466,15 +469,13 @@ answers.forEach(answer => {
         //this will check if the answer selected is correct
             acceptingAnswer = false;
             const selectedOption = e.target;
-            const selectedAnswer = selectedOption.dataset['number'];
+            const selectedAnswer = selectedOption.dataset['answer'];
 
-            //after clicking an answer this will generate a new one
-            console.log(selectedAnswer);
+            //after clicking an answer this will generate a new question
+            console.log(selectedAnswer, currentQuestion.answer);
             nextQuestion();
     });
 });
-
-
 
 startGame();
 
