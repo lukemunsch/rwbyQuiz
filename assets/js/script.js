@@ -428,10 +428,10 @@ function startGame(){
     score = 0;
     availableQuestions = [...questions];
     console.log(availableQuestions);
-    getNewQuestion();
+    nextQuestion();
 };
 
-function getNewQuestion(){
+function nextQuestion(){
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
@@ -450,7 +450,15 @@ function getNewQuestion(){
 answers.forEach(answer => {
     answer.addEventListener('click', e => {
         console.log(e.target);
-    })
+            if(!acceptingAnswer) return;
+
+            acceptingAnswer = false;
+            const selectedOption = e.target;
+            const selectedAnswer = selectedOption.dataset['number']
+
+            console.log(selectedAnswer);
+            nextQuestion();
+    });
 });
 
 
