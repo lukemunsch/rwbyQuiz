@@ -476,6 +476,7 @@ answers.forEach(answer => {
             nextQuestion();
     });
 });
+
 function modalChange(){
     let modChange = document.getElementById('rules-modal');
     if(modChange.style.display === "none"){
