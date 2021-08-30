@@ -95,8 +95,12 @@ The steps in order to deploy my site in github was:
 1. Open Github repo for rwbyQuiz.
 2. Navigate to settings (upper right of page).
 3. On the left, navigate downwards to the Pages section.
-4. IWhen page loads there would be a dropdown in main section of page, choose main/master.
+4. When page loads there would be a dropdown in main section of page, choose main/master.
 5. Hit Save and wait for link to show as: "Your site is published at 
 https://lukemunsch.github.io/rwbyQuiz/"
 
 ## Credits
+
+In the beginnging of the JavaScript section of my project I created numerous versions of my code but I coulnd't make the code compelete what I wanted it to. I have researched using some videos online and found some very helpful tutorials on code. The main video I used was James Q Quick's video on youtube for building a quiz app. https://www.youtube.com/watch?v=zZdQGs62cR8 is the video for fixing the issues I had with my app code.
+
+I did have a few issues with a pop up moda that failed to appear and disappear with the clicking of certain elements but another user called Dean Andrejevic was able to assist me

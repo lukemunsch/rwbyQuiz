@@ -411,7 +411,7 @@ let questions = [
 //defining the variables
 
 const question = document.getElementById('question');
-const answers = Array.from( document.getElementsByClassName('answerText'));
+const answers = Array.from(document.getElementsByClassName('answerText'));
 
 let currentQuestion = {};
 let acceptingAnswer = true;
@@ -438,7 +438,7 @@ function nextQuestion(){
     }
 
     questionCounter++;
-    let questionNo = document.getElementById('questionCounter');
+    let questionNo = document.getElementById('questionNumber');
     questionNo.innerText = `Question: ${questionCounter}/20`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -476,6 +476,13 @@ answers.forEach(answer => {
             nextQuestion();
     });
 });
+function modalChange(){
+    let modChange = document.getElementById('rules-modal');
+    if(modChange.style.display === "none"){
+        modChange.removeAttribute('style', 'display:none');
+    } else {
+        modChange.setAttribute('style' ,'display:none')
+    }
+}
 
 startGame();
-

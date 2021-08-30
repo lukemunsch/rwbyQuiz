@@ -154,6 +154,16 @@ footer {
     text-align: center;
 }
 
+#questionCounter {
+    width: 100%;
+    text-align: center;
+}
+
+#questionNumber p {
+    align-items: center;
+    text-align: center;
+}
+
 /*This is where we create the lifeline icons*/
 
 #lifelineCount {
@@ -190,7 +200,6 @@ footer {
     height: 70px;
     border-radius: 30%;
     margin-bottom: 5px;
-    color: lightgray;
     font-size: 125%;
     padding: 0;
 }
@@ -281,6 +290,10 @@ footer {
     margin-left: 170px;
 }
 
+.hide {
+    display: none;
+}
+
 
 /*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
 @media screen and (max-width:1280px) {
@@ -298,7 +311,7 @@ footer {
     }
     
     .lifeline img {
-        height: 70px;
+        height: 50px;
         margin-right: 5px;
     }
     

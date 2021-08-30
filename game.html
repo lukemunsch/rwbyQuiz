@@ -30,7 +30,7 @@
         <nav>
             <ul>
                 <li id="restart" onclick="startGame()">Restart</li>
-                <li id="rules">Rules</li>
+                <li id="rules" onclick="modalChange()">Rules</li>
             </ul>
         </nav>
     </div>
@@ -40,6 +40,7 @@
     <div>
         <div id="questionField">
             <div id="questionCounter">
+                <p id="questionNumber"></p>
             </div>
             <div>
                 <p id="question"></p>
@@ -67,7 +68,7 @@
             </button>
         </div>
     </div>
-    <div id="rules-modal" class="modal" style="display:none;">
+    <div id="rules-modal" class="modal">
         <div class="modal-content">
             <div class="modal-close">
                 <h2>Rules</h2>
@@ -82,7 +83,7 @@
                         <li>3 lives = 5 points</li>
                     </ul>
                 </ul>
-                <button type="button"><em>OK!</em></button>
+                <button type="button" onclick="modalChange()"><em>OK!</em></button>
             </div>
         </div>
     </div>
