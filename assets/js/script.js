@@ -65,7 +65,7 @@ let questions = [
     },
     {
         question:"Who is the odd One out?",
-        answer1: "ozma",
+        answer1: "Ozma",
         answer2: "Oscar",
         answer3: "Ozpin",
         answer4: "Oobleck",
@@ -439,7 +439,7 @@ function nextQuestion(){
 
     questionCounter++;
     let questionNo = document.getElementById('questionCounter');
-    questionNo = `Question: /20`;
+    questionNo.innetText = `Question: /20`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
