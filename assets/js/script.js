@@ -439,7 +439,7 @@ function nextQuestion(){
 
     questionCounter++;
     let questionNo = document.getElementById('questionCounter');
-    questionNo.innetText = `Question: /20`;
+    questionNo.innerText = `Question: ${questionCounter}/20`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
@@ -472,7 +472,7 @@ answers.forEach(answer => {
             const selectedAnswer = selectedOption.dataset['answer'];
 
             //after clicking an answer this will generate a new question
-            console.log(selectedAnswer, currentQuestion.answer);
+            console.log(selectedAnswer, currentQuestion.correctAnswer);
             nextQuestion();
     });
 });

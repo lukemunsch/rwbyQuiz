@@ -6,10 +6,13 @@
 
 
 body {
-    --hue: var(--hue-neutral);
     background-color: #000; 
     color: lightgray;
     font-family: 'STIX Two Math', sans-serif;
+}
+
+p {
+    color: lightgray;
 }
 
 
@@ -137,7 +140,6 @@ footer {
     font-family: 'STIX Two Math', Arial, sans-serif;
     width: 50%;
     height: 130px;
-    text-align: center;
     align-items: center;
     justify-content: center;
     border: 5px solid red;
@@ -146,6 +148,10 @@ footer {
     margin-left: 20%;
     padding: 2% 5%;
     font-size: 150%;
+}
+
+#questionField p {
+    text-align: center;
 }
 
 /*This is where we create the lifeline icons*/
