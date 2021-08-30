@@ -166,8 +166,8 @@ let questions = [
         question:"In the Vale fighting festival, who fights against Pyrrha in the final match?",
         answer1: "Sunn",
         answer2: "Emerald",
-        answer2: "Yang",
-        answer2: "Penny",
+        answer3: "Yang",
+        answer4: "Penny",
         correctAnswer: 4
     },
     {
@@ -288,8 +288,8 @@ let questions = [
         question:"What do team RWBY discover about the more intelligent grimm that tries to capture Penny in Mantel?",
         answer1: "They are all related to Ozpin",
         answer2: "They can't Talk",
-        answer2: "They have long tongues",
-        answer2: "Humans with Silver Eyes",
+        answer3: "They have long tongues",
+        answer4: "Humans with Silver Eyes",
         correctAnswer: 4
     },
     {
