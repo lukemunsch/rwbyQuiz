@@ -277,7 +277,7 @@ let questions = [
         correctAnswer: 1
     },
     {
-        question:"What is the name of the sepcial team that catches team RWBYQRNJ in Mantel?",
+        question:"What is the name of the special team that catches team RWBYQRNJ in Mantel?",
         answer1: "SnowAngels", 
         answer2: "White Rooks",
         answer3: "Ace Ops",
@@ -470,13 +470,19 @@ answers.forEach(answer => {
             acceptingAnswer = false;
             const selectedOption = e.target;
             const selectedAnswer = selectedOption.dataset['answer'];
+            const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
+
+            selectedOption.parentElement.classList.add(classResult);
+            selectedOption.parentElement.classList.remove(classResult);
+
 
             //after clicking an answer this will generate a new question
-            console.log(selectedAnswer, currentQuestion.correctAnswer);
             nextQuestion();
     });
 });
 
+
+//function to make modal for rules
 function modalChange(){
     let modChange = document.getElementById('rules-modal');
     if(modChange.style.display === "none"){

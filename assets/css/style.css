@@ -11,10 +11,6 @@ body {
     font-family: 'STIX Two Math', sans-serif;
 }
 
-p {
-    color: lightgray;
-}
-
 
 
 /*main page image*/
@@ -197,13 +193,13 @@ footer {
 .answerButton {
     width: 100%;
     background-color: #000;
+    color: lightgray;
     height: 70px;
     border-radius: 30%;
     margin-bottom: 5px;
     font-size: 125%;
     padding: 0;
 }
-
 
 #answer1.answerButton {
     border: 5px solid red;
@@ -280,18 +276,13 @@ footer {
     background-color: black;
     color: lightgray;
     font-size: 200%;
-    width: 150px;
+    width: 130px;
     height: 60px;
     margin-bottom: 20px;
     position: relative;
     padding: 0.5rem;
-    transition: all .3 ease;
     cursor: pointer;
     margin-left: 170px;
-}
-
-.hide {
-    display: none;
 }
 
 
