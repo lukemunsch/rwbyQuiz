@@ -248,12 +248,12 @@ let questions = [
         question:"Who does Adam Kill to become the new head of the White fang?",
         answer1: "Sienna Khan",
         answer2: "Gira Belladonna",
-        answer3: "General Ironwood",
+        answer3: "Blake Belladonna",
         answer4: "Professor Lionheart",
         correctAnswer: 1
     },
     {
-        question:"Which creature of Grimm does team RWBY take on to Complete their initiation?",
+        question:"Which creature of Grimm is the final monster team RWBY fights during initiation?",
         answer1: "Nevermore",
         answer2: "Deathstalker",
         answer3: "Mutant Beowulf",
@@ -420,8 +420,8 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 //creating constants
-const correctBonus = 1;
-const maxQuestions = 20;
+const answerScore = 1;
+const maxQuestions = 30;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
@@ -433,13 +433,13 @@ function startGame(){
 
 //this will pull a new question from the available array of questinos
 function nextQuestion(){
-    if(availableQuestions === 0 || questionCounter >= maxQuestions){
-        return window.location.assign('/end.html');
-    }
-
+  if(availableQuestions === 0 || questionCounter >= maxQuestions){
+        ldrbrdReveal();
+  }
+  
     questionCounter++;
     let questionNo = document.getElementById('questionNumber');
-    questionNo.innerText = `Question: ${questionCounter}/20`;
+    questionNo.innerText = `Question: ${questionCounter}/${maxQuestions}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
@@ -471,24 +471,37 @@ answers.forEach(answer => {
             const selectedOption = e.target;
             const selectedAnswer = selectedOption.dataset['answer'];
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
+                if(classResult === 'correct'){
+                    increaseScore(answerScore);
+                } else {
+                    decreaseLife(answerScore);
+                }
 
 
-            console.log(classResult);
             const parentBtn = selectedOption.parentElement;
-            console.log(parentBtn);
             parentBtn.classList.add(classResult);
 
+//after clicking an answer this will generate a new question
+            
             setTimeout( () => {
                 parentBtn.classList.remove(classResult);
                 nextQuestion();
             }, 2000);
-
-
-
-            //after clicking an answer this will generate a new question
             
     });
 });
+
+function increaseScore(){
+    score += answerScore;
+    scoreTotal.innerText = score;
+}
+
+function decreaseLife(){
+    let lives = document.getElementsByClassName('lifeline');
+    lives += answerScore;
+    const loseLife = 4 - (lives.dataset['life']);
+    loseLife.setAttribute('style', 'display=none');
+}
 
 
 //function to make modal for rules
@@ -497,7 +510,25 @@ function modalChange(){
     if(modChange.style.display === "none"){
         modChange.removeAttribute('style', 'display:none');
     } else {
-        modChange.setAttribute('style' ,'display:none')
+        modChange.setAttribute('style' ,'display:none');
+    }
+}
+
+function ldrbrdReveal(){
+    let brdUp = document.getElementById('leaderboard-box');
+    if(brdUp.style.display === 'none'){
+        brdUp.removeAttribute('style', 'display:none');
+    }
+}
+
+
+
+function ldrbrdClose(){
+    let brdDown = document.getElementById('leaderboard-box');
+    if(brdDown.style.display !== "none"){
+        brdDown.setAttribute('style' ,'display:none');
+        
+        startGame();
     }
 }
 

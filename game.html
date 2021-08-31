@@ -48,9 +48,9 @@
         </div>
     </div>
     <div id="lifelineCount">
-        <span class="lifeline" id="lifeline1"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
-        <span class="lifeline" id="lifeline2"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
-        <span class="lifeline" id="lifeline3"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
+        <span class="lifeline" data-life="1"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
+        <span class="lifeline" data-life="2"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
+        <span class="lifeline" data-life="3"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
     </div>
     <div id="answerArea">
         <div class="btnZone">
@@ -68,9 +68,9 @@
             </button>
         </div>
     </div>
-    <div id="rules-modal" class="modal">
+    <div id="rules-modal" class="modal" style="display:none">
         <div class="modal-content">
-            <div class="modal-close">
+            <div>
                 <h2>Rules</h2>
                 <ul>
                     <li>Answer 20 questions about the RWBY universe</li>
@@ -87,6 +87,16 @@
             </div>
         </div>
     </div>
+    <div id="leaderboard-box" class="modal" style="display:none">
+        <div class="ldrbrd-content">
+            <div class="">
+                <h2>Leaderboard</h2>
+                    <div class="ldrbrd-list"></div>
+                <button type="button" onclick="ldrbrdClose()"><em>OK!</em></button>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

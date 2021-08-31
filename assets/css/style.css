@@ -205,41 +205,27 @@ footer {
     border: 5px solid red;
 }
 
-#answer1:hover {
-    background-color: rgb(95, 0, 0);
-}
-
 #answer2.answerButton {
     border: 5px solid white;
 }
 
-#answer2:hover {
-    background-color: rgb(217, 244, 255);
-    color: rgb(0, 0, 0);
-}
 
 #answer3.answerButton {
     border: 5px solid darkslategrey;
-}
-
-#answer3:hover {
-    background-color:rgb(46, 46, 46)
 }
 
 #answer4.answerButton {
     border: 5px solid yellow;
 }
 
-#answer4:hover {
-    background-color: rgb(131, 122, 0)
-}
-
 .correct {
-    background-color: rgb(0, 140, 0)
+    background-color: rgb(0, 140, 0);
+    color: rgb(241, 241, 241);
 }
 
 .incorrect {
     background-color: red;
+    color: rgb(66, 66, 66);
 }
 
 /*Modal for rules popup on screen*/
@@ -285,15 +271,55 @@ footer {
     margin-left: 170px;
 }
 
+#leaderboard-box {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ldrbrd-content {
+    background-color: rgb(170, 40, 40);
+    border: 5px solid red;
+    padding: 10px 2rem 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    line-height: 120%;
+}
+
+.ldrbrd-content h2 {
+    border-left: 10px solid black;
+    letter-spacing: 2px;
+    padding-left: 5px;  
+}
+
+.ldrbrd-content button {
+    background-color: black;
+    color: lightgray;
+    font-size: 200%;
+    width: 130px;
+    height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 170px;
+}
+
 
 /*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
 @media screen and (max-width:1280px) {
     #questionField {
         width: 80%;
         margin-top: 10px;
-        margin-left: 10%;
+        margin-left: 5%;
         font-size: 120%;
-        padding: inherit;
     }
 
     #lifelineCount {
@@ -348,6 +374,7 @@ footer {
         max-width: 100px;
     }
 }
+
 @media screen and (max-width:768px) {
 
     .mainImg {   
