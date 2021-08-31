@@ -239,7 +239,7 @@ footer {
 }
 
 .incorrect {
-    background-color: rgb(85, 0, 0);
+    background-color: red;
 }
 
 /*Modal for rules popup on screen*/

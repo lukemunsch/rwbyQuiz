@@ -472,12 +472,21 @@ answers.forEach(answer => {
             const selectedAnswer = selectedOption.dataset['answer'];
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
 
-            selectedOption.parentElement.classList.add(classResult);
-            selectedOption.parentElement.classList.remove(classResult);
+
+            console.log(classResult);
+            const parentBtn = selectedOption.parentElement;
+            console.log(parentBtn);
+            parentBtn.classList.add(classResult);
+
+            setTimeout( () => {
+                parentBtn.classList.remove(classResult);
+                nextQuestion();
+            }, 2000);
+
 
 
             //after clicking an answer this will generate a new question
-            nextQuestion();
+            
     });
 });
 
