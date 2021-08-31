@@ -92,7 +92,18 @@
             <div class="">
                 <h2>Leaderboard</h2>
                     <div class="ldrbrd-list"></div>
-                <button type="button" onclick="ldrbrdClose()"><em>OK!</em></button>
+                    <form id="scorerName">
+                        <span>
+                            <input type="text" maxlength="12" name="scorer" placeholder="Put in Name! (10 characters)">
+                        </span>
+                        <span>
+                            <p id="scoreTotal"> </p>
+                        </span>
+                        <span>
+                            <button id="updateLdrbrd" type="submit"></button>
+                        </span>
+                    </form>
+                <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
             </div>
         </div>
     </div>

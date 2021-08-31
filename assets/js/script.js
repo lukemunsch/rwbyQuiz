@@ -421,7 +421,7 @@ let availableQuestions = [];
 
 //creating constants
 const answerScore = 1;
-const maxQuestions = 30;
+const maxQuestions = 5;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
@@ -486,14 +486,13 @@ answers.forEach(answer => {
             setTimeout( () => {
                 parentBtn.classList.remove(classResult);
                 nextQuestion();
-            }, 2000);
+            }, 1000);
             
     });
 });
 
 function increaseScore(){
     score += answerScore;
-    scoreTotal.innerText = score;
 }
 
 /* function decreaseLife(){
