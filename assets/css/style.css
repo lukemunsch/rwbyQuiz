@@ -514,3 +514,11 @@ footer {
         padding: 1px 0;
     }
 }
+
+/*@media screen and (max-width: 320px) {
+    #questionField {
+        font-family: 'STIX Two Math', Arial, sans-serif;
+        width: 96%;
+        padding: 2%;
+    }
+}*/

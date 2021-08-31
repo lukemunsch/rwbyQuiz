@@ -473,9 +473,9 @@ answers.forEach(answer => {
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
                 if(classResult === 'correct'){
                     increaseScore(answerScore);
-                } else {
-                    decreaseLife(answerScore);
-                }
+              /*  } else {
+                *    decreaseLife(answerScore);
+              */}
 
 
             const parentBtn = selectedOption.parentElement;
@@ -496,13 +496,12 @@ function increaseScore(){
     scoreTotal.innerText = score;
 }
 
-function decreaseLife(){
-    let lives = document.getElementsByClassName('lifeline');
-    lives += answerScore;
-    const loseLife = 4 - (lives.dataset['life']);
-    loseLife.setAttribute('style', 'display=none');
-}
-
+/* function decreaseLife(){
+*    let lives = document.getElementsByClassName('lifeline');
+ *   lives += answerScore;
+  *  const loseLife = 4 - lives;
+*}
+*/
 
 //function to make modal for rules
 function modalChange(){
