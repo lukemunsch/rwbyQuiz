@@ -297,7 +297,7 @@ footer {
 }
 
 .congrats img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
@@ -326,8 +326,8 @@ footer {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -340,12 +340,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 120%;
-    line-height: 120%;
+    font-size: 100%;
+    line-height: 100%;
 }
 
 .gameOver-Content img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
