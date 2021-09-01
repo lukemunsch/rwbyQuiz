@@ -13,7 +13,7 @@ let questions = [
         answer2: "Ladies-Man", 
         answer3: "Vomit-Boy", 
         answer4: "Useless-stick",
-        correctAnswer: 1
+        correctAnswer: 3
     },
     {
         question: "What happened to the moon?",
@@ -463,7 +463,7 @@ let questions = [
         answer4: "4",
         correctAnswer: 2
     },
-    
+
 ]
 //defining the variables
 

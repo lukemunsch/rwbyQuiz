@@ -296,6 +296,11 @@ footer {
     line-height: 120%;
 }
 
+.congrats img {
+    width: 300px;
+    height: auto;
+}
+
 .ldrbrd-content h2 {
     border-left: 10px solid black;
     letter-spacing: 2px;
