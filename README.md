@@ -64,10 +64,9 @@ scythe weapon).
 
 ### favicon
 
-As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the 
-favicon.ico to represent the site in the browser tab. 
+As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the favicon.ico to represent the site in the browser tab. 
 
-### Game page
+### Index page
 
 This is the Entry page for the RWBY Quiz - the first page that allows user to enter 
 the actual quiz.
@@ -77,6 +76,18 @@ to the smaller widths.
 along with the text below just in case the icon fails to load.
 - The footer which is fixd to the bottom of the page as to peices of text (or one 
 if the screen size is too small) with simple text.
+
+
+image
+
+### Game Page
+
+Description
+
+image
+
+### Congrats Game
+
 
 
 
