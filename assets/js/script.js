@@ -510,6 +510,7 @@ function endGame(){
         let scaryFace = document.getElementById('gameOver');
         if(scaryFace.style.display === 'none'){
             scaryFace.removeAttribute('style', 'display:none');
+        }
 }
 
 function endGameClose(){
