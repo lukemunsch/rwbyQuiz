@@ -474,12 +474,14 @@ let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
 let lifeLost = 0;
+let maxScoreBonus = 5;
+let onelifeBonus = 2;
 let questionCounter = 0;
 let availableQuestions = [];
 
 //creating constants
 const answerScore = 1;
-const maxQuestions = 20;
+const maxQuestions = 5;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
@@ -493,6 +495,7 @@ function startGame(){
 //this will pull a new question from the available array of questinos
 function nextQuestion(){
   if(availableQuestions === 0 || questionCounter >= maxQuestions){
+        actualScore();
         ldrbrdReveal();
   } else if (lifeLost === 3){
         endGame();
@@ -561,6 +564,18 @@ function decreaseLife(){
     //let loseLife = document.getElementsByClassName('lifeline');
     //let byeLife = loseLife.dataset['life'];
     //byeLife.setAttribute('style', 'display:none');
+}
+
+function actualScore(){
+    if(lifeLost === 0){
+        score += maxScoreBonus;
+        console.log(score)
+    } else if(lifeLost === 1){
+        score += onelifeBonus;
+        console.log(score)
+    } else {
+        console.log(score)
+    }
 }
 
 function endGame(){
