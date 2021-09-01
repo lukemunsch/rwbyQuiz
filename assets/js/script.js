@@ -1,3 +1,10 @@
+let userScore = [
+    {
+        score: "",
+        scoreAchieved: "",
+    }
+];
+
 let questions = [
     {
         question: "What body part did Yang lose in her first meeting with Adam?",
@@ -416,6 +423,7 @@ const answers = Array.from(document.getElementsByClassName('answerText'));
 let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
+let lifeLost = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
@@ -435,6 +443,8 @@ function startGame(){
 function nextQuestion(){
   if(availableQuestions === 0 || questionCounter >= maxQuestions){
         ldrbrdReveal();
+  } else if (lifeLost === 3){
+        gameOver();
   }
   
     questionCounter++;
@@ -473,9 +483,9 @@ answers.forEach(answer => {
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
                 if(classResult === 'correct'){
                     increaseScore(answerScore);
-              /*  } else {
-                *    decreaseLife(answerScore);
-              */}
+                } else {
+                    decreaseLife(answerScore);
+                }
 
 
             const parentBtn = selectedOption.parentElement;
@@ -495,12 +505,17 @@ function increaseScore(){
     score += answerScore;
 }
 
-/* function decreaseLife(){
-*    let lives = document.getElementsByClassName('lifeline');
- *   lives += answerScore;
-  *  const loseLife = 4 - lives;
-*}
-*/
+function decreaseLife(){
+    lifeLost += answerScore;
+    let loseLife = document.getElementsByClassName('lifeline');
+    let byeLife = loseLife.dataset['life'];
+    byeLife
+}
+
+function gameOver(){
+
+}
+
 
 //function to make modal for rules
 function modalChange(){
@@ -516,10 +531,21 @@ function ldrbrdReveal(){
     let brdUp = document.getElementById('leaderboard-box');
     if(brdUp.style.display === 'none'){
         brdUp.removeAttribute('style', 'display:none');
+        let points = document.getElementById('scoreTotal');
+        points.innerText = `Score: ${scoreAchieved}`;
     }
 }
 
-
+function updateScorers(event){
+    event.preventDefault();
+    if(updateScorers.includes(form.elements['scorer'].value)){
+        errerMsg.innerText = `Please choose another name!`;
+    } else {
+        scorer.push(form.elements['scorer'].value);
+        scoreAchieved.push(form.elements['scoreAchieved'].value);
+        document.getElementById('updateLdrbrd').setAttribute('style', 'display:none');
+    }
+}
 
 function ldrbrdClose(){
     let brdDown = document.getElementById('leaderboard-box');

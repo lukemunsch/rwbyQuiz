@@ -48,9 +48,9 @@
         </div>
     </div>
     <div id="lifelineCount">
-        <span class="lifeline" data-life="1"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
-        <span class="lifeline" data-life="2"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
         <span class="lifeline" data-life="3"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
+        <span class="lifeline" data-life="2"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
+        <span class="lifeline" data-life="1"><img src="./assets/images/scyth-min.png" alt="Lifeline icon"></span>
     </div>
     <div id="answerArea">
         <div class="btnZone">
@@ -87,22 +87,35 @@
             </div>
         </div>
     </div>
-    <div id="leaderboard-box" class="modal" style="display:none">
+    <div id="leaderboard-box" class="modal" >
         <div class="ldrbrd-content">
-            <div class="">
+            <div>
                 <h2>Leaderboard</h2>
                     <div class="ldrbrd-list"></div>
                     <form id="scorerName">
                         <span>
                             <input type="text" maxlength="12" name="scorer" placeholder="Put in Name! (10 characters)">
                         </span>
+                        <span id="errorMsg"></span>
                         <span>
-                            <p id="scoreTotal"> </p>
+                            <p id="scoreTotal" name="scoreAchieved"></p>
                         </span>
                         <span>
-                            <button id="updateLdrbrd" type="submit"></button>
+                            <button id="updateLdrbrd" type="submit" onclick="updateScorers()">Add to Scorers!</button>
                         </span>
                     </form>
+                <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
+            </div>
+        </div>
+    </div>
+    <div id="gameOver" class="modal" style="display:none">
+        <div class="gameOver-Content">
+            <div>
+                <h1>GAME OVER!</h1>
+                    <div class="endgame-image">
+                        <img src="./assets/images/salem-face-large-min.png" alt="The face of evil has caught you" class="endgame-face">
+                    </div>
+                    <p>Please retry my quiz!</p>
                 <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
             </div>
         </div>
