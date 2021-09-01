@@ -179,7 +179,7 @@ let questions = [
         correctAnswer: 1
     },
     {
-        question: "How many gods were there when Salem los her true love?",
+        question: "How many gods were there when Salem lost her true love?",
         answer1: "4",
         answer2: "3",
         answer3: "2",
