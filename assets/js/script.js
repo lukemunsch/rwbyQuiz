@@ -287,9 +287,9 @@ let questions = [
     {
         question: "What do team RWBY discover about the more intelligent grimm that tries to capture Penny in Mantel?",
         answer1: "They are all related to Ozpin",
-        answer2: "They can't Talk",
+        answer2: "They can't talk",
         answer3: "They have long tongues",
-        answer4: "Humans with Silver Eyes",
+        answer4: "Humans with silver eyes",
         correctAnswer: 4
     },
     {
@@ -302,10 +302,10 @@ let questions = [
     },
     {
         question: "What is Mecury doing when Emerald is talking to Team RWBY about their second round team?",
-        answer1: "Eating Pickles",
-        answer2: "Sniffing Boots",
-        answer3: "Stealing Money",
-        answer4: "Kicking Ass in every way",
+        answer1: "Eating pickles",
+        answer2: "Sniffing boots",
+        answer3: "Stealing money",
+        answer4: "Kicking ass in every way",
         correctAnswer: 2
     },
     {
@@ -345,17 +345,17 @@ let questions = [
     {
         question: "Whose Semblence Allows them to deal damage based on their own sustained damage?",
         answer1: "Yang",
-        answer2: "Rwby",
+        answer2: "Ruby",
         answer3: "Blake",
         answer4: "Weiss",
         correctAnswer: 1
     },
     {
         question: "After an outburst at a party, Weiss is replaced by Whitley as what?",
-        answer1: "Princess",
-        answer2: "Manager",
-        answer3: "Heiress",
-        answer4: "Director",
+        answer1: "Princess of Atlas",
+        answer2: "Manager of Family Shop",
+        answer3: "Heiress to Schnee Dust Company",
+        answer4: "Director of the Atlas Academy",
         correctAnswer: 3
     },
     {
@@ -367,7 +367,7 @@ let questions = [
         correctAnswer: 4
     },
     {
-        question: "What is the Event that leads a grimm evasion into vale?",
+        question: "How are grimm able to invade vale before the Fighting Festival?",
         answer1: "Train ram and bombs",
         answer2: "Semblence Explosion",
         answer3:  "White fang infiltration",
@@ -375,7 +375,7 @@ let questions = [
         correctAnswer: 1
     },
     {
-        question: "Jaune and Pyrrha's tem attack is called what?",
+        question: "Jaune and Pyrrha's team attack is called what?",
         answer1: "Flower Power",
         answer2: "Twin Lancers",
         answer3: "Arkos",
@@ -432,8 +432,8 @@ let questions = [
         correctAnswer: 3
     },
     {
-        question: "What were the first words Ozpin spoke to RWBY?",
-        answer1: "wHAT DO YOU THINK YOU WERE DOING?",
+        question: "What were the first words Ozpin spoke to Ruby?",
+        answer1: "WHAT DO YOU THINK YOU WERE DOING?",
         answer2: "I hope you are confortable",
         answer3: "Do you understand the gravity of your situation",
         answer4: "You have silver eyes",
@@ -464,24 +464,27 @@ let questions = [
         correctAnswer: 2
     },
 
+
 ]
 //defining the variables
 
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answerText'));
+const lives = document.getElementsByClassName('lifeline')
 
 let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
 let lifeLost = 0;
-let maxScoreBonus = 5;
-let onelifeBonus = 2;
 let questionCounter = 0;
 let availableQuestions = [];
 
 //creating constants
 const answerScore = 1;
-const maxQuestions = 5;
+const maxQuestions = 20;
+
+const maxScoreBonus = 5;
+const onelifeBonus = 2;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
@@ -550,7 +553,7 @@ answers.forEach(answer => {
             setTimeout( () => {
                 parentBtn.classList.remove(classResult);
                 nextQuestion();
-            }, 1000);
+            }, 750);
             
     });
 });
@@ -561,30 +564,30 @@ function increaseScore(){
 
 function decreaseLife(){
     lifeLost += answerScore;
-    //let loseLife = document.getElementsByClassName('lifeline');
-    //let byeLife = loseLife.dataset['life'];
-    //byeLife.setAttribute('style', 'display:none');
+
+    //this will make the scythe icons disappear depending on how many lives lost
+
 }
 
+//this code is to increase the score depending on how many lives are still remaining
 function actualScore(){
     if(lifeLost === 0){
         score += maxScoreBonus;
-        console.log(score)
     } else if(lifeLost === 1){
         score += onelifeBonus;
-        console.log(score)
     } else {
-        console.log(score)
+        score;
     }
 }
 
+// this will bring up the game over screen for not completing the quiz
 function endGame(){
         let scaryFace = document.getElementById('gameOver');
         if(scaryFace.style.display === 'none'){
             scaryFace.removeAttribute('style', 'display:none');
         }
 }
-
+//close the game over screen
 function endGameClose(){
     let restartGame = document.getElementById('gameOver');
     if(restartGame.style.display !== "none"){
@@ -604,7 +607,7 @@ function modalChange(){
         modChange.setAttribute('style' ,'display:none');
     }
 }
-
+//opening the  success popup
 function ldrbrdReveal(){
     let brdUp = document.getElementById('leaderboard-box');
     if(brdUp.style.display === 'none'){
@@ -613,7 +616,7 @@ function ldrbrdReveal(){
         points.innerText = `You beat Salem with a score of: ${score}`;
     }
 }
-
+// closing the success screen
 function ldrbrdClose(){
     let brdDown = document.getElementById('leaderboard-box');
     if(brdDown.style.display !== "none"){
