@@ -1,17 +1,17 @@
-
 //defining the variables
-
 const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answerText'));
-const lives = document.getElementsByClassName('lifeline')
 
 let currentQuestion = {};
 let acceptingAnswer = true;
 let score = 0;
 let lifeLost = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let questionsLeft = [];
 
+let scytheShow = document.querySelector('.lifeline[data-life="1"');
+
+console.log(scytheShow);
 //creating constants
 const answerScore = 1;
 const maxQuestions = 20;
@@ -21,16 +21,19 @@ const onelifeBonus = 2;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
+
+    scytheShow.style.removeProperty('display:none');
     questionCounter = 0;
     score = 0;
     lifeLost = 0;
-    availableQuestions = [...questions];
+
+    questionsLeft = [...questions];
     nextQuestion();
 };
 
 //this will pull a new question from the available array of questinos
 function nextQuestion(){
-  if(availableQuestions === 0 || questionCounter >= maxQuestions){
+  if(questionsLeft === 0 || questionCounter >= maxQuestions){
         actualScore();
         ldrbrdReveal();
   } else if (lifeLost === 3){
@@ -41,8 +44,8 @@ function nextQuestion(){
     let questionNo = document.getElementById('questionNumber');
     questionNo.innerText = `Question: ${questionCounter}/${maxQuestions}`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-        currentQuestion = availableQuestions[questionIndex];
+    const questionIndex = Math.floor(Math.random() * questionsLeft.length);
+        currentQuestion = questionsLeft[questionIndex];
         question.innerText = currentQuestion.question;
 
         //this will add the corresposnding question's answers to the correct buttons
@@ -52,7 +55,7 @@ function nextQuestion(){
         });
 
         //removing current question from the available list
-        availableQuestions.splice(questionIndex, 1);
+        questionsLeft.splice(questionIndex, 1);
 
         //this allows the correct answer to be selected if there is a question
         acceptingAnswer = true;
@@ -99,7 +102,11 @@ function decreaseLife(){
     lifeLost += answerScore;
 
     //this will make the scythe icons disappear depending on how many lives lost
+    let loseLife = document.body.querySelector(`.lifeline[data-life="${lifeLost}"]`);
+    loseLife.setAttribute('style', 'display:none');
 
+   // let byeLife = loseLife.dataset['life'];
+//    byeLife.style.setAttribute('style', 'display:none');
 }
 
 //this code is to increase the score depending on how many lives are still remaining
@@ -130,6 +137,7 @@ function endGameClose(){
     }
 }
 
+// function reset lives
 
 //function to make modal for rules
 function modalChange(){
