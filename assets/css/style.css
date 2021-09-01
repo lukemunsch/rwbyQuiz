@@ -338,9 +338,14 @@ footer {
     line-height: 120%;
 }
 
+.gameOver-Content img {
+    width: 300px;
+    height: auto;
+}
+
 .gameOver-Content h1 {
     border-left: 10px solid black;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     padding-left: 5px; 
 }
 

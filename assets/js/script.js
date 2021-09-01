@@ -219,7 +219,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question:"What is the team name Nora creates when rwby joins them?",
+        question:"What is the team name Nora creates when Ruby joins them?",
         answer1: "JNRR",
         answer2: "RNJR",
         answer3: "NRJR",
@@ -541,8 +541,6 @@ function ldrbrdReveal(){
         points.innerText = `You beat Salem with a score of: ${score}`;
     }
 }
-
-
 
 function ldrbrdClose(){
     let brdDown = document.getElementById('leaderboard-box');
