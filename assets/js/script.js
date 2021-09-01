@@ -1,10 +1,3 @@
-let userScore = [
-    {
-        score: "",
-        scoreAchieved: "",
-    }
-];
-
 let questions = [
     {
         question: "What body part did Yang lose in her first meeting with Adam?",
@@ -435,6 +428,7 @@ const maxQuestions = 5;
 function startGame(){
     questionCounter = 0;
     score = 0;
+    lifeLost = 0;
     availableQuestions = [...questions];
     nextQuestion();
 };
@@ -444,7 +438,7 @@ function nextQuestion(){
   if(availableQuestions === 0 || questionCounter >= maxQuestions){
         ldrbrdReveal();
   } else if (lifeLost === 3){
-        gameOver();
+        endGame();
   }
   
     questionCounter++;
@@ -507,13 +501,24 @@ function increaseScore(){
 
 function decreaseLife(){
     lifeLost += answerScore;
-    let loseLife = document.getElementsByClassName('lifeline');
-    let byeLife = loseLife.dataset['life'];
-    byeLife
+    //let loseLife = document.getElementsByClassName('lifeline');
+    //let byeLife = loseLife.dataset['life'];
+    //byeLife.setAttribute('style', 'display:none');
 }
 
-function gameOver(){
+function endGame(){
+        let scaryFace = document.getElementById('gameOver');
+        if(scaryFace.style.display === 'none'){
+            scaryFace.removeAttribute('style', 'display:none');
+}
 
+function endGameClose(){
+    let restartGame = document.getElementById('gameOver');
+    if(restartGame.style.display !== "none"){
+        restartGame.setAttribute('style' ,'display:none');
+        
+        startGame();
+    }
 }
 
 
@@ -531,21 +536,12 @@ function ldrbrdReveal(){
     let brdUp = document.getElementById('leaderboard-box');
     if(brdUp.style.display === 'none'){
         brdUp.removeAttribute('style', 'display:none');
-        let points = document.getElementById('scoreTotal');
-        points.innerText = `Score: ${scoreAchieved}`;
+        let points = document.getElementById('userScore');
+        points.innerText = `You beat Salem with a score of: ${score}`;
     }
 }
 
-function updateScorers(event){
-    event.preventDefault();
-    if(updateScorers.includes(form.elements['scorer'].value)){
-        errerMsg.innerText = `Please choose another name!`;
-    } else {
-        scorer.push(form.elements['scorer'].value);
-        scoreAchieved.push(form.elements['scoreAchieved'].value);
-        document.getElementById('updateLdrbrd').setAttribute('style', 'display:none');
-    }
-}
+
 
 function ldrbrdClose(){
     let brdDown = document.getElementById('leaderboard-box');
@@ -555,5 +551,7 @@ function ldrbrdClose(){
         startGame();
     }
 }
+
+
 
 startGame();

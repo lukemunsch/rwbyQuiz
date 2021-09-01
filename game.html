@@ -87,23 +87,12 @@
             </div>
         </div>
     </div>
-    <div id="leaderboard-box" class="modal" >
+    <div id="leaderboard-box" class="modal">
         <div class="ldrbrd-content">
             <div>
-                <h2>Leaderboard</h2>
-                    <div class="ldrbrd-list"></div>
-                    <form id="scorerName">
-                        <span>
-                            <input type="text" maxlength="12" name="scorer" placeholder="Put in Name! (10 characters)">
-                        </span>
-                        <span id="errorMsg"></span>
-                        <span>
-                            <p id="scoreTotal" name="scoreAchieved"></p>
-                        </span>
-                        <span>
-                            <button id="updateLdrbrd" type="submit" onclick="updateScorers()">Add to Scorers!</button>
-                        </span>
-                    </form>
+                <h1>Congratulations!</h1>
+                <p id="userScore"></p>
+                <p>Please retry the quiz again!</p>
                 <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
             </div>
         </div>
@@ -116,7 +105,7 @@
                         <img src="./assets/images/salem-face-large-min.png" alt="The face of evil has caught you" class="endgame-face">
                     </div>
                     <p>Please retry my quiz!</p>
-                <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
+                <button type="button" onclick="endGameClose()"><em>Restart Game!</em></button>
             </div>
         </div>
     </div>
