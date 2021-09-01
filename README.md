@@ -24,6 +24,9 @@ https://lukemunsch.github.io/rwbyQuiz/
 
 ## **Wireframes**
 
+[Index Page Here](/workspace/rwbyQuiz/assets/images/wireframes/rwbyQuizIndex.png)
+
+[Game Page Here](/workspace/rwbyQuiz/assets/images/wireframes/rwbyQuizGame.png)
 
 ## Overview
 
@@ -51,15 +54,29 @@ depending on how many lives are remaining.
 ### Style Choices
 
 Using some of the main logo images and personal experience from viewing the show myself;
-- I have styled the quiz pages and elements using the themes of the main RWBY team with the prominant theme being Ruby Rose (the main protagonsit for the show and leader of team RWBY) in black and red buttons and highlights. 
-- The answer buttons are shown in the 4 main character colors: Ruby - red, Weiss - white, Blake - black (dark elements), and Yang - yellow. 
-- The text color is supposed to represent the blade color for Crescent Rose (the large scythe weapon).
+- I have styled the quiz pages and elements using the themes of the main RWBY team with 
+the prominant theme being Ruby Rose (the main protagonsit for the show and leader of 
+team RWBY) in black and red buttons and highlights. 
+- The answer buttons are shown in the 4 main character colors: Ruby - red, Weiss - white, 
+Blake - black (dark elements), and Yang - yellow. 
+- The text color is supposed to represent the blade color for Crescent Rose (the large 
+scythe weapon).
 
 ### favicon
 
-As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the favicon.ico to represent the site in the browser tab. 
+As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the 
+favicon.ico to represent the site in the browser tab. 
 
-### Hero Image + Overlay
+### Game page
+
+This is the Entry page for the RWBY Quiz - the first page that allows user to enter 
+the actual quiz.
+- Headed by the main logo for RWBY and a smaller design when the screen responds 
+to the smaller widths.
+- The main protagonists icon of Red Rose (for Ruby Rose), used to enter the quiz 
+along with the text below just in case the icon fails to load.
+- The footer which is fixd to the bottom of the page as to peices of text (or one 
+if the screen size is too small) with simple text.
 
 
 

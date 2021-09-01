@@ -208,7 +208,7 @@ let questions = [
         answer2: "Shorty-Pants",
         answer3: "Spring Maiden",
         answer4: "Dust Sorceress",
-        correctAnswer: 'Grimm Reaper'
+        correctAnswer: 1
     },
     {
         question: "Yang leaves to find Ruby after the fall of Beacon, but who is it she is actually looking for?",
