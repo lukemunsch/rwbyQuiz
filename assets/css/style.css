@@ -225,8 +225,8 @@ footer {
 }
 
 span.answerText {
-    height: fit-content;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
 }
 
 #answer1.answerButton {
@@ -409,7 +409,7 @@ span.answerText {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
+    font-size: 130%;
     line-height: 100%;
 }
 
