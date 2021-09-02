@@ -12,7 +12,26 @@ body {
     box-sizing: border-box;
 }
 
+#about-quiz {
+    font-family: 'Cuprum', Arial, sans-serif;
+    width: auto;
+    background: red;
+    color: black;
+    float: right;
+    position: relative;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    align-items: center;
+    height: 40px;
+    padding-left: 1rem;
+}
 
+#about-quiz p {
+    border-left: 10px solid lightgray;
+    height: 50%;
+    font-size: 100%;
+    cursor: pointer;
+}
 
 /*main page image*/
 .mainImg {
@@ -87,7 +106,7 @@ footer {
     font-family: 'Cuprum', Arial, sans-serif;
     width: auto;
     background: red;
-    color: lightgray;
+    color: black;
     float: right;
     position: relative;
     top: -50px;
@@ -105,7 +124,7 @@ footer {
 
 #right-nav li {
     margin: 0 3rem;
-    border-left: 10px solid black;
+    border-left: 10px solid lightgray;
     height: 100%;
     font-size: 150%;
     cursor: pointer;
@@ -115,7 +134,7 @@ footer {
     font-family: 'Cuprum', Arial, sans-serif;
     width: auto;
     background: red;
-    color: lightgray;
+    color: black;
     position: relative;
     justify-content: space-between;
     letter-spacing: 3px;
@@ -126,7 +145,7 @@ footer {
 
 .squareAction p {
     margin: 15px;
-    border-left: 10px solid black;
+    border-left: 10px solid lightgray;
     height: auto;
     font-size: 150%;
 }
@@ -227,6 +246,48 @@ footer {
 .incorrect {
     background-color: red;
     color: rgb(66, 66, 66);
+}
+
+/* this will bring up a modal window for a description about the site */
+#about-game {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    background-color: rgb(170, 40, 40);
+    border: 5px solid red;
+    padding: 10px 2rem 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    line-height: 120%;
+}
+
+.about-content h1 {
+    border-left: 10px solid black;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.about-content button {
+    background-color: black;
+    color: lightgray;
+    font-size: 200%;
+    width: 130px;
+    height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 170px;
 }
 
 /*Modal for rules popup on screen*/

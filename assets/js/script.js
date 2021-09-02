@@ -120,6 +120,19 @@ function actualScore(){
     }
 }
 
+// this will allow you to see what the purpose of the game is actually about in case you have ventured to the site by accident
+function aboutChange(){
+    let about = document.getElementById('about-game');
+    if(about.style.display === 'none'){
+        about.removeAttribute('style', 'display:none');
+    } else {
+        about.setAttribute('style', 'display:none');
+    }
+}
+
+
+}
+
 // this will bring up the game over screen for not completing the quiz
 function endGame(){
         let scaryFace = document.getElementById('gameOver');
