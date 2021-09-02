@@ -3,7 +3,7 @@ const question = document.getElementById('question');
 const answers = Array.from(document.getElementsByClassName('answerText'));
 
 let currentQuestion = {};
-let acceptingAnswer = true;
+let answerRequired = true;
 let score = 0;
 let lifeLost = 0;
 let questionCounter = 0;
@@ -25,7 +25,7 @@ function startGame(){
     questionCounter = 0;
     score = 0;
     lifeLost = 0;
-    if(lifeLost === 0);
+
     firstLife.removeAttribute('style', 'display:none');
     secLife.removeAttribute('style', 'display:none');
     lastLife.removeAttribute('style', 'display:none');
@@ -45,10 +45,10 @@ function nextQuestion(){
   
     questionCounter++;
     let questionNo = document.getElementById('questionNumber');
-    questionNo.innerText = `Question: ${questionCounter}/${maxQuestions}`;
+    questionNo.innerText = `Question: ${questionCounter} of ${maxQuestions}`;
 
-    const questionIndex = Math.floor(Math.random() * questionsLeft.length);
-        currentQuestion = questionsLeft[questionIndex];
+    const questIndex = Math.floor(Math.random() * questionsLeft.length);
+        currentQuestion = questionsLeft[questIndex];
         question.innerText = currentQuestion.question;
 
         //this will add the corresposnding question's answers to the correct buttons
@@ -58,10 +58,10 @@ function nextQuestion(){
         });
 
         //removing current question from the available list
-        questionsLeft.splice(questionIndex, 1);
+        questionsLeft.splice(questIndex, 1);
 
         //this allows the correct answer to be selected if there is a question
-        acceptingAnswer = true;
+        answerRequired = true;
 };
 
 
@@ -70,17 +70,17 @@ answers.forEach(answer => {
     answer.addEventListener('click', e => {
 
         //if no answer is required, return nothing
-            if(!acceptingAnswer) return;
+            if(!answerRequired) return;
 
         //this will check if the answer selected is correct
-            acceptingAnswer = false;
+            answerRequired = false;
             const selectedOption = e.target;
             const selectedAnswer = selectedOption.dataset['answer'];
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
                 if(classResult === 'correct'){
-                    increaseScore(answerScore);
+                    increaseScore();
                 } else {
-                    decreaseLife(answerScore);
+                    decreaseLife();
                 }
 
 
@@ -108,8 +108,6 @@ function decreaseLife(){
     let loseLife = document.body.querySelector(`.lifeline[data-life="${lifeLost}"]`);
     loseLife.setAttribute('style', 'display:none');
 
-   // let byeLife = loseLife.dataset['life'];
-//    byeLife.style.setAttribute('style', 'display:none');
 }
 
 //this code is to increase the score depending on how many lives are still remaining
