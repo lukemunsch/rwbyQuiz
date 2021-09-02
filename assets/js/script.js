@@ -32,7 +32,7 @@ function startGame(){
 
     questionsLeft = [...questions];
     nextQuestion();
-};
+}
 
 //this will pull a new question from the available array of questinos
 function nextQuestion(){
@@ -62,7 +62,7 @@ function nextQuestion(){
 
         //this allows the correct answer to be selected if there is a question
         answerRequired = true;
-};
+}
 
 
 //this is adding a click listener to the answers to generate a new question
@@ -97,7 +97,7 @@ answers.forEach(answer => {
             }, 750);
             
     });
-});
+})
 
 //setting the incrementing score system for points
 function increaseScore(){

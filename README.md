@@ -13,7 +13,6 @@
 7. [Testing](#testing)
     1. [HTML](#html)
     2. [CSS](#css)
-    3. [JS](#js)
 8. [Unfixed Bugs](#unfixedbugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -47,7 +46,8 @@ to the main themes and colors of the RWBY show.
 On the second and all further visits to the RWBY Fan-Made Quiz, they will test their knowledge 
 further with a series of randomly assigned questions that will differ every time they are 
 running the quiz: the number of questions to answer are 20 and the life lines add extra points 
-depending on how many lives are remaining.
+depending on how many lives are remaining. The randomly selecting questions will be chosen from 
+over 60 available, so they may be able to run the quiz 3 times with only occasional repeats.
 
 ## Features
 
