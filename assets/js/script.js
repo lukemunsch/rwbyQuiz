@@ -9,23 +9,26 @@ let lifeLost = 0;
 let questionCounter = 0;
 let questionsLeft = [];
 
-let scytheShow = document.querySelector('.lifeline[data-life="1"');
-
-console.log(scytheShow);
 //creating constants
 const answerScore = 1;
 const maxQuestions = 20;
+
+let firstLife = document.querySelector('.lifeline[data-life="1"');
+let secLife = document.querySelector('.lifeline[data-life="2"');
+let lastLife = document.querySelector('.lifeline[data-life="3"');
 
 const maxScoreBonus = 5;
 const onelifeBonus = 2;
 
 //this is what we want to happen when the page is loaded
 function startGame(){
-
-    scytheShow.style.removeProperty('display:none');
     questionCounter = 0;
     score = 0;
     lifeLost = 0;
+    if(lifeLost === 0);
+    firstLife.removeAttribute('style', 'display:none');
+    secLife.removeAttribute('style', 'display:none');
+    lastLife.removeAttribute('style', 'display:none');
 
     questionsLeft = [...questions];
     nextQuestion();
