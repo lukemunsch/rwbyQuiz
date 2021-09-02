@@ -83,6 +83,7 @@ answers.forEach(answer => {
                     decreaseLife();
                 }
 
+                //this will turn correct answer green when clicking the correct or red when incorrect
 
             const parentBtn = selectedOption.parentElement;
             parentBtn.classList.add(classResult);
@@ -91,16 +92,18 @@ answers.forEach(answer => {
             
             setTimeout( () => {
                 parentBtn.classList.remove(classResult);
+
                 nextQuestion();
             }, 750);
             
     });
 });
 
+//setting the incrementing score system for points
 function increaseScore(){
     score += answerScore;
 }
-
+// setting the life losing functionality to the site
 function decreaseLife(){
     lifeLost += answerScore;
 
@@ -147,8 +150,6 @@ function endGameClose(){
         startGame();
     }
 }
-
-// function reset lives
 
 //function to make modal for rules
 function modalChange(){

@@ -317,7 +317,7 @@ let questions = [
         correctAnswer: 2
     },
     {
-        question: "Pyrrha's semblance allows her to control What?",
+        question: "Pyrrha's semblance allows her to control what?",
         answer1: "Poles",
         answer2: "People",
         answer3: "Magnets",
@@ -463,6 +463,54 @@ let questions = [
         answer4: "4",
         correctAnswer: 2
     },
-
+    {
+        question: "Atlas security systems are breached by which member of Salem's Crew?",
+        answer1: "Tyrion",
+        answer2: "Watts",
+        answer3: "Hazel",
+        answer4: "Cinder",
+        correctAnswer: 2
+    },
+    {
+        question: "Who is Neo impersonating when Nora, Ren and Jaune confront her with the relic of knowledge?",
+        answer1: "Ren",
+        answer2: "Rwby",
+        answer3: "Oscar",
+        answer4: "Roman",
+        correctAnswer: 3
+    },
+    {
+        question: "Which member of Ruby's family causes a huge scene during the Fighting Festival by detroying the courtyard?",
+        answer1: "Taiyang",
+        answer2: "Summer",
+        answer3: "Qrow",
+        answer4: "Yang",
+        correctAnswer: 3
+    },
+    // 60 questions
+    {
+        question: "Which story does Porfessor Ozpin ask Pyrrha if she knows?",
+        answer1: "The Tale of the Seasons",
+        answer2: "The Tale of the Two Brothers",
+        answer3: "The Shallow Sea",
+        answer4: "The Girl in the Tower",
+        correctAnswer: 1
+    },
+    {
+        question: "After reaching Argus, who is portrayed as the statue that Jaune finds?",
+        answer1: "Ozpin",
+        answer2: "Salem",
+        answer3: "Pyrrha",
+        answer4: "Ironwood",
+        correctAnswer: 3
+    },
+    {
+        question: "After Cinder starts attacking people in the void area, who is responsible for Yang's demise?",
+        answer1: "WHAT THE...!!!",
+        answer2: "Neo",
+        answer3: "Salem",
+        answer4: "Ozpin",
+        correctAnswer: 2
+    },
 
 ]
