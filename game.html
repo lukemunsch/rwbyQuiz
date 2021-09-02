@@ -17,11 +17,9 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="squareAction">
             <a href="index.html">
-                <button class="squareAction">
-                    <p>Home</p>
-                </button>
+                <p>Home</p>
             </a>
         </div>
     </header>
@@ -33,9 +31,6 @@
                 <li id="rules" onclick="modalChange()">Rules</li>
             </ul>
         </nav>
-    </div>
-    <div>
-        <!--qustion div-->
     </div>
     <div>
         <div id="questionField">
@@ -55,16 +50,16 @@
     <div id="answerArea">
         <div class="btnZone">
             <button class="answerButton" id="answer1" >
-                <p class="answerText" data-answer="1"></p>
+                <span class="answerText" data-answer="1"></span>
             </button>
             <button class="answerButton" id="answer2">
-                <p class="answerText" data-answer="2"></p>
+                <span class="answerText" data-answer="2"></span>
             </button>
             <button class="answerButton" id="answer3">
-                <p class="answerText" data-answer="3"></p>
+                <span class="answerText" data-answer="3"></span>
             </button>
             <button class="answerButton" id="answer4">
-                <p class="answerText" data-answer="4"></p>
+                <span class="answerText" data-answer="4"></span>
             </button>
         </div>
     </div>
@@ -94,7 +89,7 @@
                 <div class="congrats">
                     <img src="./assets/images/rwbyAttack-min.png" alt="RWBY team ready for another attack">
                 </div>
-                <h3 id="userScore"></h3>
+                <p id="userScore"></p>
                 <p>Please have another go at the Quiz!</p>
                 <button type="button" onclick="ldrbrdClose()"><em>Restart Game!</em></button>
             </div>

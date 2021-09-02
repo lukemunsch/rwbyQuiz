@@ -3,8 +3,6 @@
 
 /*main body set up*/
 
-
-
 body {
     background-color: #000; 
     color: lightgray;
@@ -133,21 +131,25 @@ footer {
 
 .squareAction {
     font-family: 'Cuprum', Arial, sans-serif;
-    width: auto;
+    width: 100px;
     background: red;
-    color: black;
     position: relative;
     justify-content: space-between;
-    letter-spacing: 3px;
     align-items: center;
     height: 50px;
-    cursor: crosshair;
+}
+
+.squareAction a {
+    text-decoration: none;
 }
 
 .squareAction p {
     margin: 15px;
+    color: black;
+    letter-spacing: 5px;
     border-left: 10px solid lightgray;
-    height: auto;
+    height: 50%;
+    padding-top: 10px;
     font-size: 150%;
 }
 
@@ -220,6 +222,11 @@ footer {
     margin-bottom: 5px;
     font-size: 125%;
     padding: 0;
+}
+
+span.answerText {
+    height: fit-content;
+    width: fit-content;
 }
 
 #answer1.answerButton {
