@@ -130,9 +130,6 @@ function aboutChange(){
     }
 }
 
-
-}
-
 // this will bring up the game over screen for not completing the quiz
 function endGame(){
         let scaryFace = document.getElementById('gameOver');
