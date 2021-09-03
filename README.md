@@ -107,25 +107,29 @@ writing as the body.
 
 ### Game Page
 
-Description
+The game page is the main page that contains the quiz itself. Elements for the nav 
+and modal buttons similar to the first page with red background color, black writing 
+and silver border block on the left.
+
+There is a question section with a similar styling to the footer element on the index page
+with its red border, dark red background and lightgray writing.
+
+The 4 buttons are all black background with light gray writing. The edges of the buttons are
+in the colors of the iconic team colors; red for Ruby, white for Weiss, black (dark gray 
+to stand out from the background) for Blake and yellow for Yang. I have not included a 
+footer for this page as i didn't feel the need for it.
 
 ![Game Page](assets/images/rmScreenShots/gamePage.png)
 
-### Rules Modal
+### Rules, Success and Game Over Modal
 
-description
+I have borrowed the same style for the About modal to style the other pop ups screens that appear;
+the Rules with only simple text, the Success and Game Over screens with small images that show
+Team RWBY to have another go if you succeed and the face of the main villain Salem if it 
 
 ![Rules Modal](assets/images/rmScreenShots/rulesModal.png)
 
-### Congrats Game Modal
-
-description
-
 ![Congrats Game Modal](assets/images/rmScreenShots/SuccessScreen.png)
-
-### Game Over Modal
-
-description
 
 ![Game Over Modal](assets/images/rmScreenShots/gameOverScreen.png)
 
