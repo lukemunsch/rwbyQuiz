@@ -22,6 +22,8 @@
 8. [Unfixed Bugs](#unfixedbugs)
 9. [Deployment](#deployment)
     1. [Local Deployment](#localdeployment)
+        1. [Forking Repositories](#forkingrepositories)
+        2. [Cloning Repositories](#cloningrepositories)
     2. [Remote Deployment](#remotedeployment)
 10. [Credits](#credits)
 
@@ -156,16 +158,23 @@ any bugs?
 
 ### Local Deployment
 
-forking 
+#### Forking Repositories
 
-cloning - downloading or copying using git
+In order to propose fixing changes to some code, or to use the code as a starting point for your 
+own project, you can fork the repository by clicking the 'Fork' button in the top right hand 
+corner of the Github repository page.
 
-remote deplayment see below:
+#### Cloning Repositories
+
+To clone a repository to use in your own project you can:
+- Click on the 'Code' button next to the gitpod link which will bring down a dropdown menu, from there:
+    1. Clone the repository by copying the link for the repo and using it for your own project,
+    2. Downloading the zip of the file to use for your own project.
 
 
-### remote deployment
+### Remote Deployment
 
-assuming that you have somehow retrieved a copy of this repository; you can then:
+Whether you have cloned, forked, downloaded an existing repository or created your own repository, you can deploy your code to the web from your repository page. In order to complete this, you can:
 1. Navigate to settings (upper right of page).
 2. On the left, navigate downwards to the Pages section.
 3. When page loads there would be a dropdown in main section of page, choose main/master.
