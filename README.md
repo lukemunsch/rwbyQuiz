@@ -74,7 +74,8 @@ scythe weapon).
 
 ### Favicon
 
-As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the favicon.ico to represent the site in the browser tab. 
+As the most iconic weapon in the RWBY universe, I have chosen Crescent Rose as the favicon.ico to
+represent the site in the browser tab. 
 
 ### Index page
 
@@ -87,54 +88,61 @@ along with the text below just in case the icon fails to load.
 - The footer which is fixd to the bottom of the page as to peices of text (or one 
 if the screen size is too small) with simple text.
 
-
-image
+![Index page](assets/images/rmScreenShots/indexPage.png)
 
 ### About Modal
 
 description
 
-image
+![About Modal](assets/images/rmScreenShots/aboutModal.png)
 
 ### Game Page
 
 Description
 
-image
+![Game Page](assets/images/rmScreenShots/gamePage.png)
 
 ### Rules Modal
 
 description
 
-image
+![Rules Modal](assets/images/rmScreenShots/rulesModal.png)
 
 ### Congrats Game Modal
 
 description
 
-image
+![Congrats Game Modal](assets/images/rmScreenShots/SuccessScreen.png)
 
 ### Game Over Modal
 
 description
 
-image
+![Game Over Modal](assets/images/rmScreenShots/gameOverScreen.png)
 
 
 ## Implementations
 
-The main page
+The main page is the entry to the entire site; this page has a small click button in the 
+top right which allows people to understand what the site is about. The page has only minimal
+elements as it is just a doorway to the main subject of the site; the quiz.
 
-The game page
+The game page 
 
-The pop up modals
+![Lighthouse Report](assets/images/rmScreenShots/lighthouseReport.png)
 
 
 ## Testing
 
-The quiz has been put through validator checks to confirm that there are no issues with teh code.
+The quiz has been put through validator checks to confirm that there are no issues with the code.
+I have also been using the dev Tools in Chrome browser to inspect certain code to make sure they 
+are operating correctly and elements displaying properly. The code has been passed through validators 
+for the HTML and CSS - the green line at the bottom of the images showing that the code contains no errors.
 I have provided screen shots below to confirm the results of the validator checks.
 
+Along with validators, I have passed the quiz through multiple different devices and linked it to 
+social media for other people to try and test the site; making sure answers are correct as well as the 
+functions are called correctly at appropriate times. On different devices and by different users no issues were reported.
 
 ### HTML
 
@@ -152,7 +160,11 @@ I have provided screen shots below to confirm the results of the validator check
 
 ## Unfixed Bugs
 
-any bugs?
+Originally I had a separate leaderboard modal with a submit button for usernames and their relevant 
+scores. Though I managed to style the modal, and then decided on a separate page to display the results. 
+But I was unable to fix. bug where the correct score would be pushed to the scorer array. So rather than 
+have a broken page with no results displaying correctly, I have removed the section and continued to 
+look into this in case I decide to include it at a later date.
 
 ## Deployment
 
@@ -174,7 +186,8 @@ To clone a repository to use in your own project you can:
 
 ### Remote Deployment
 
-Whether you have cloned, forked, downloaded an existing repository or created your own repository, you can deploy your code to the web from your repository page. In order to complete this, you can:
+Whether you have cloned, forked, downloaded an existing repository or created your own repository,
+you can deploy your code to the web from your repository page. In order to complete this, you can:
 1. Navigate to settings (upper right of page).
 2. On the left, navigate downwards to the Pages section.
 3. When page loads there would be a dropdown in main section of page, choose main/master.
@@ -185,9 +198,9 @@ https://<'your-github-repo'>.github.io/rwbyQuiz/"
 ## Credits
 
 In the beginnging of the JavaScript section of my project I created numerous versions of my 
-code but I couldn't make the code compelete what I wanted it to. Through my research i have 
-managed to find an example of quiz site that i have copied the structure it help build my 
-site and I have adapted the code to make it my own and evolved it for my own quiz. The main 
+code but I couldn't make the code compelete what I wanted it to. Through my research, I have 
+managed to find an example of a quiz site that I based the structure on to help build my 
+site. I have built on and adapted the code to fix the issues with my own quiz. The main 
 video I used was James Q Quick's video on youtube, https://www.youtube.com/watch?v=zZdQGs62cR8
 is the video for fixing the issues I had with my quiz code.
 
@@ -206,4 +219,4 @@ The images I have used for my site were found through google searches for specif
 - The rose emblem is from https://static.wikia.nocookie.net/rwby/images/3/34/Ruby_Rose_Emblem.svg/revision/latest/scale-to-width-down/250?cb=20150103071935
 - The scythe icon for lifelines is from https://e7.pngegg.com/pngimages/790/597/png-clipart-scythe-rwby-volume-4-chapter-1-the-next-step-rooster-teeth-cosplay-anime-ruby-others-miscellaneous-weapon.png
 - The salem game over image is from https://ladygeekgirl.files.wordpress.com/2016/06/rwby-salem.png
-- the Successful game image is from https://static.wikia.nocookie.net/rwby/images/2/2c/Team_RWBY_charges.jpeg/revision/latest?cb=20171029001801
+- The successful game image is from https://static.wikia.nocookie.net/rwby/images/2/2c/Team_RWBY_charges.jpeg/revision/latest?cb=20171029001801
