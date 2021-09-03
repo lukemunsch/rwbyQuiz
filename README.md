@@ -12,9 +12,7 @@
     3. [Index Page](#indexpage)
     4. [About Modal](#aboutmodal)
     5. [Game Page](#gamepage)
-    6. [Rules Modal](#rulesmodal)
-    7. [Congrats Game Modal](#congratsgamemodal)
-    8. [Game Over Modal](#gameovermodal)
+    6. [Rules, Success and Game Over Modal](#modal)
 6. [Implementation](#implementation)
 7. [Testing](#testing)
     1. [HTML](#html)
@@ -119,13 +117,17 @@ in the colors of the iconic team colors; red for Ruby, white for Weiss, black (d
 to stand out from the background) for Blake and yellow for Yang. I have not included a 
 footer for this page as i didn't feel the need for it.
 
+I also use iconic weapon Crescent Rose (Ruby Rose's scythe - it's also a gun!) as a lifeline counter
+as a small tribute to the main character as well. This is also in a similar color scheme 
+to the rest of the site.
+
 ![Game Page](assets/images/rmScreenShots/gamePage.png)
 
 ### Rules, Success and Game Over Modal
 
 I have borrowed the same style for the About modal to style the other pop ups screens that appear;
 the Rules with only simple text, the Success and Game Over screens with small images that show
-Team RWBY to have another go if you succeed and the face of the main villain Salem if it 
+Team RWBY to have another go if you succeed and the face of the main villain Salem if you lose all three lives.
 
 ![Rules Modal](assets/images/rmScreenShots/rulesModal.png)
 
