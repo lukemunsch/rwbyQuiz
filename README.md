@@ -173,6 +173,11 @@ But I was unable to fix. bug where the correct score would be pushed to the scor
 have a broken page with no results displaying correctly, I have removed the section and continued to 
 look into this in case I decide to include it at a later date.
 
+I have an issue regarding the buttons themselves; the internal content is only the space of the word, and 
+yet when the rest of the button is clicked, no action happens. I have tried to increase the size of the 
+field and width of the element itself, but it doesn't change the clickable area for the buttons. I have 
+looked at trying to change the target for the clickable function to see if that makes a difference.
+
 ## Deployment
 
 ### Local Deployment

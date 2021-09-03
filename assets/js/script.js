@@ -74,10 +74,10 @@ answers.forEach(answer => {
 
         //this will check if the answer selected is correct
             answerRequired = false;
-            const selectedOption = e.target;
+            const selectedOption = e.target.parentElement;
             const selectedAnswer = selectedOption.dataset['answer'];
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
-                if(classResult === 'correct'){
+                if(classResult === 'correct'){ 
                     increaseScore();
                 } else {
                     decreaseLife();
