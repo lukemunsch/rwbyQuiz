@@ -92,7 +92,16 @@ if the screen size is too small) with simple text.
 
 ### About Modal
 
-description
+The initial modal pop up that I created is for the 'about' section which gives the 
+users a brief explanation about what the site is about. It is simply filled with 
+text elements and a button to make the pop up close once you are done reading it. 
+I considered changing the code for the site completely at the start but the pop up 
+apporach made it seem tidier and doesn't affect the rest of the page, only showing 
+and hiding the relevant content.
+
+The style of the pop up is in a similar style scheme to the rest of the site and 
+elements with reds and light gray writing with the button in black with same color 
+writing as the body.
 
 ![About Modal](assets/images/rmScreenShots/aboutModal.png)
 
