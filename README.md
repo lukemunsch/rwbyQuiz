@@ -2,7 +2,7 @@
 
 ## # Table of contents
 
-1. [Link to live site](#linktolivesite)
+1. [Link To Live Site](#linktolivesite)
 2. [Wireframes](#wireframes)
 3. [Overview](#overview)
 4. [User Stories](#userstories)
@@ -136,7 +136,7 @@ Team RWBY to have another go if you succeed and the face of the main villain Sal
 ![Game Over Modal](assets/images/rmScreenShots/gameOverScreen.png)
 
 
-## Implementations
+## Implementation
 
 The main page is the entry to the entire site; this page has a small click button in the 
 top right which allows people to understand what the site is about. The page has only minimal
@@ -206,9 +206,9 @@ corner of the Github repository page.
 #### Cloning Repositories
 
 To clone a repository to use in your own project you can:
-- Click on the 'Code' button next to the gitpod link which will bring down a dropdown menu, from there:
-    1. Clone the repository by copying the link for the repo and using it for your own project,
-    2. Downloading the zip of the file to use for your own project.
+- Click on the 'Code' button next to the gitpod link which will bring down a dropdown menu, from there either:
+    - Clone the repository by copying the link for the repo and using it for your own project,
+    - Downloading the zip of the file to use for your own project.
 
 
 ### Remote Deployment

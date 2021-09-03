@@ -449,9 +449,9 @@ span.answerText {
 /*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
 @media screen and (max-width:1280px) {
     #questionField {
-        width: 80%;
+        width: 60%;
         margin-top: 10px;
-        margin-left: 5%;
+        margin-left: 15%;
         font-size: 120%;
     }
 
@@ -468,11 +468,11 @@ span.answerText {
     #answerArea {
         margin-top: 10px;
         width: 60%;
-        margin-left: 20%;
+        margin-left: 30%;
     }
     
     .answerButton {
-        width: 100%;
+        width: 70%;
         margin-bottom: 7px;
         font-size: 100%;
         padding: 2px 0;
@@ -551,7 +551,7 @@ span.answerText {
     #answerArea {
         margin-top: 10px;
         width: 80%;
-        margin-left: 10%;
+        margin-left: 20%;
     }
     
     .answerButton {
