@@ -127,7 +127,14 @@ The main page is the entry to the entire site; this page has a small click butto
 top right which allows people to understand what the site is about. The page has only minimal
 elements as it is just a doorway to the main subject of the site; the quiz.
 
-The game page 
+The game page is consisting of most of the elements and functions as well as modals and styles. 
+It has the functions for the quiz; auto populating questions and relevant answers and updating 
+the question counter, tracking scores for incorrect and correct answers.
+
+The images for the pages were found and located on google searches, and though the files were 
+not large, I have compressed the images and logos to better load quicker and improve the 
+performance of the site.
+
 
 ![Lighthouse Report](assets/images/rmScreenShots/lighthouseReport.png)
 
