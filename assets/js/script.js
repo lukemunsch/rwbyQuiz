@@ -74,7 +74,7 @@ answers.forEach(answer => {
 
         //this will check if the answer selected is correct
             answerRequired = false;
-            const selectedOption = e.target.parentElement;
+            const selectedOption = e.target;
             const selectedAnswer = selectedOption.dataset['answer'];
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
                 if(classResult === 'correct'){ 
