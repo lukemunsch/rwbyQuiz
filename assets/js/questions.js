@@ -474,7 +474,7 @@ var questions = [
     {
         question: "Who is Neo impersonating when Nora, Ren and Jaune confront her with the relic of knowledge?",
         answer1: "Ren",
-        answer2: "Rwby",
+        answer2: "Ruby",
         answer3: "Oscar",
         answer4: "Roman",
         correctAnswer: 3

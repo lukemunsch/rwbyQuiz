@@ -17,6 +17,7 @@
 7. [Testing](#testing)
     1. [HTML](#html)
     2. [CSS](#css)
+    3. [JS](#js)
 8. [Unfixed Bugs](#unfixedbugs)
 9. [Deployment](#deployment)
     1. [Local Deployment](#localdeployment)
@@ -177,9 +178,19 @@ functions are called correctly at appropriate times. On different devices and by
 
 ![Game page Validator](aassets/images/validators/gameValidator.png)
 
-### CSS Check
+### CSS
 
 ![CSS Code Validator](assets/images/validators/cssValidator.png)
+
+### JS 
+
+#### Questions Check
+
+![Questions JS Check](assets/images/validators/questionsJshint.png)
+
+#### Script Check
+
+![Script JS Check](assets/images/validators/scriptJshint.png)
 
 ## Unfixed Bugs
 

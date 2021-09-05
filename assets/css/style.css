@@ -215,6 +215,7 @@ footer {
     width: 100%;
     height: 100%;
     padding: 0 20px;
+    cursor: pointer;
 }
 
 .answerButton {
@@ -347,7 +348,7 @@ span.answerText {
 
 /*This is the popup window for the leaderboard*/
 
-#leaderboard-box {
+#success-box {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
@@ -358,7 +359,7 @@ span.answerText {
     align-items: center;
 }
 
-.ldrbrd-content {
+.success-content {
     background-color: rgb(170, 40, 40);
     border: 5px solid red;
     padding: 10px 2rem 5px;
@@ -374,13 +375,13 @@ span.answerText {
     height: auto;
 }
 
-.ldrbrd-content h2 {
+.success-content h2 {
     border-left: 10px solid black;
     letter-spacing: 2px;
     padding-left: 5px;  
 }
 
-.ldrbrd-content button {
+.success-content button {
     background-color: black;
     color: lightgray;
     font-size: 100%;
@@ -440,11 +441,6 @@ span.answerText {
     cursor: pointer;
     margin-left: 170px;
 }
-
-
-
-
-
 
 /*adding responsive sizing for different viewports  at max width 1200 768 320 px*/
 @media screen and (max-width:1280px) {
