@@ -55,7 +55,7 @@ function nextQuestion(){
 
         //this will add the corresposnding question's answers to the correct buttons
         answers.forEach( answer => {
-            const number = answer.dataset['answer'];
+            const number = answer.dataset.answer;
             answer.innerText = currentQuestion['answer' + number];
         });
 
@@ -77,7 +77,7 @@ answers.forEach(answer => {
         //this will check if the answer selected is correct
             answerRequired = false;
             const selectedOption = e.target;
-            const selectedAnswer = selectedOption.dataset['answer'];
+            const selectedAnswer = selectedOption.dataset.answer;
             const classResult = selectedAnswer == currentQuestion.correctAnswer ? 'correct' : 'incorrect';
                 if(classResult === 'correct'){ 
                     increaseScore();
@@ -99,7 +99,7 @@ answers.forEach(answer => {
             }, 750);
             
     });
-})
+});
 
 //setting the incrementing score system for points
 function increaseScore(){
