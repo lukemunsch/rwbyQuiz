@@ -1,4 +1,4 @@
-let questions = [
+var questions = [
     {
         question: "What body part did Yang lose in her first meeting with Adam?",
         answer1: "Right arm",
@@ -513,4 +513,4 @@ let questions = [
         correctAnswer: 2
     },
 
-]
+];
