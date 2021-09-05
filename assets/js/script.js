@@ -38,12 +38,14 @@ function startGame(){
 function nextQuestion(){
   if(questionsLeft === 0 || questionCounter >= maxQuestions){
         actualScore();
-        ldrbrdReveal();
+        successReveal();
   } else if (lifeLost === 3){
         endGame();
   }
   
+//   set up incrementing questions
     questionCounter++;
+
     let questionNo = document.getElementById('questionNumber');
     questionNo.innerText = `Question: ${questionCounter} of ${maxQuestions}`;
 
@@ -161,8 +163,8 @@ function modalChange(){
     }
 }
 //opening the  success popup
-function ldrbrdReveal(){
-    let brdUp = document.getElementById('leaderboard-box');
+function successReveal(){
+    let brdUp = document.getElementById('success-box');
     if(brdUp.style.display === 'none'){
         brdUp.removeAttribute('style', 'display:none');
         let points = document.getElementById('userScore');
@@ -170,8 +172,8 @@ function ldrbrdReveal(){
     }
 }
 // closing the success screen
-function ldrbrdClose(){
-    let brdDown = document.getElementById('leaderboard-box');
+function successClose(){
+    let brdDown = document.getElementById('success-box');
     if(brdDown.style.display !== "none"){
         brdDown.setAttribute('style' ,'display:none');
         
