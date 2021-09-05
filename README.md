@@ -60,6 +60,8 @@ the over 60 available, so they may be able to run the quiz 3 times with only occ
 
 ## Features
 
+Languages used for the RWBY Fan-Made Quiz are HTML, CSS AND JavaScript.
+
 ### Style Choices
 
 Using some of the main logo images and personal experience from viewing the show myself;
@@ -140,17 +142,21 @@ Team RWBY to have another go if you succeed and the face of the main villain Sal
 
 ## Implementation
 
-The main page is the entry to the entire site; this page has a small click button in the 
-top right which allows people to understand what the site is about. The page has only minimal
-elements as it is just a doorway to the main subject of the site; the quiz.
+The main page is the entry to the entire site; 
+- Simple image to show the iconic image fomr the subject show.
+- Simple button top right to explain what the page is about.
+- Iconic logo of main protagonist as entry to the main quiz page with explanation text.
+- Minimalistic footer with simple text so as not to ditract from main topic buttons and features.
 
-The game page is consisting of most of the elements and functions as well as modals and styles. 
-It has the functions for the quiz; auto-populating questions and relevant answers and updating 
-the question counter, tracking scores for incorrect and correct answers.
+The game page is consisting of most of the elements and functions as well as modals and styles;
+- Direction back to the main home page in top left.
+- Restarting the quiz and a rules pop up that appears and disappears when relevant buttons are clicked.
+- Question Area with simple contracting colors and auto populating using JavaScript.
+- Answer buttons that bring up corresponding answers depending on the question that is asked.
 
-The images for the pages were found and located on google searches, and though the files were 
-not large, I have compressed the images and logos to better load quicker and improve the 
-performance of the site.
+The images for the pages were found and located on google searches (pages credited at bottom of README.md
+file), and though the files were not large, I have compressed the images and logos to better load quicker
+and improve the performance of the site.
 
 
 ![Lighthouse Report](assets/images/rmScreenShots/lighthouseReport.png)
@@ -239,7 +245,25 @@ https://<'your-github-repo'>.github.io/rwbyQuiz/"
 In the beginning of the JavaScript section of my project, I created numerous versions of my 
 code but I couldn't make the code complete what I wanted it to. Through my research, I have 
 managed to find an example of a quiz site that I based the structure on to help build my 
-site. I have built on and adapted the code to fix the issues with my own quiz. The main 
+site. I borrowed some code that he also used for his quiz as I struggled to link the 
+answers to the corresponding buttons, but it has been adapted and changed for my own project:
+
+    answers.forEach( answer => {
+            const number = answer.dataset.answer;
+            answer.innerText = currentQuestion['answer' + number];
+        });
+
+    answers.forEach(answer => {
+    answer.addEventListener('click', e => {
+
+            if(!answerRequired) return;
+
+            answerRequired = false;
+            const selectedOption = e.target;
+
+
+
+I have built on and adapted the code to fix the issues with my own quiz. The main 
 video I used was James Q Quick's video on youtube, https://www.youtube.com/watch?v=zZdQGs62cR8
 is the video for fixing the issues I had with my quiz code.
 
@@ -250,7 +274,12 @@ able to resolve the issue and made the modals appear as necessary.
 I was also having trouble with my lifeline icons not disappearing - and then once they did, not
 reappearing when the quiz restarted - and together with my mentor, Chris Quinn, I was able to adapt
 my code and identify the issues with targeting my specific elements and then making sure the 
-elements were styled correctly in the start game function.
+elements were styled correctly in the start game function. The code i finally managed to come up with was:
+
+    let loseLife = document.body.querySelector(`.lifeline[data-life="${lifeLost}"]`);
+    loseLife.setAttribute('style', 'display:none');
+
+}
 
 The images I have used for my site were found through google searches for specific logos/icons/images:
 - The larger main logo is from https://geekdad.com/wp-content/uploads/2015/10/RWBYLogo.png,
