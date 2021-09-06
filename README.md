@@ -109,7 +109,6 @@ I have borrowed the same style for the About modal to style the other pop-ups sc
 
 ![Game Over Modal](assets/images/rmScreenShots/gameOverScreen.png)
 
-
 ## Implementation
 
 The main page is the entry to the entire site; 
@@ -185,7 +184,6 @@ To clone a repository to use in your own project you can:
     - Clone the repository by copying the link for the repo and using it for your own project,
     - Downloading the zip of the file to use for your own project.
 
-
 ### Remote Deployment
 
 Whether you have cloned, forked, downloaded an existing repository or created your own repository, you can deploy your code to the web from your repository page. To complete this, you can:
@@ -194,7 +192,6 @@ Whether you have cloned, forked, downloaded an existing repository or created yo
 3. When the page loads there would be a dropdown in main section of page, choose main/master.
 4. Hit Save and wait for link to show as: "Your site is published at 
 https://<'your-github-repo'>.github.io/rwbyQuiz/"
-
 
 ## Credits
 
@@ -212,10 +209,6 @@ In the beginning of the JavaScript section of my project, I created numerous ver
 
             answerRequired = false;
             const selectedOption = e.target;
-
-
-
-
 
 I did have a few issues with a pop-up modal that failed to appear and disappear with the clicking of certain elements but another user called Dean Andrejevic was able to assist me. Together we were able to resolve the issue and made the modals appear as necessary.
 
