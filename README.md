@@ -49,9 +49,14 @@ On the user's first visit to my Quiz site, this will allow the user to test the 
 
 On the second and all further visits to the RWBY Fan-Made Quiz, they will test their knowledge further with a series of randomly assigned questions that will differ every time they are running the quiz: the number of questions to answer is 20 and the lifelines add extra points depending on how many lives are remaining. The randomly selected questions will be chosen from the over 60 available, so they may be able to run the quiz 3 times with only occasional repeats.
 
+One thing that I quite like about the questions is that as the story progresses, there can be an increasing number of questions that can be added, from smallest details making the quiz harder, or new seasons added and new content to be added with maybe even new characters. This may encourage people to continue to come back numerous times to see what has been added and the new updated questions they can try to answer.
+
 ## Features
 
-Languages used for the RWBY Fan-Made Quiz are HTML, CSS AND JavaScript.
+Languages used for the RWBY Fan-Made Quiz are:
+- HTML,
+- CSS and,
+- JavaScript.
 
 ### Style Choices
 
@@ -59,6 +64,7 @@ Using some of the main logo images and personal experience from viewing the show
 - I have styled the quiz pages and elements using the themes of the main RWBY team with the prominent theme being Ruby Rose (the main protagonist for the show and leader of team RWBY) in black and red buttons and highlights. 
 - The answer buttons are shown in the 4 main character colors: Ruby - red, Weiss - white, Blake - black (dark elements), and Yang - yellow. 
 - The text color is supposed to represent the blade color for Crescent Rose (the large scythe weapon).
+- Th fonts I chose were ones that had a slightly different appearance to standard fonts, but also having a noriceable style change between the buttons/nav/modal buttons and the bulk questions with the most writing in.
 
 ### Favicon
 
@@ -225,3 +231,5 @@ The images I have used for my site were found through google searches for specif
 - The scythe icon for lifelines is from https://e7.pngegg.com/pngimages/790/597/png-clipart-scythe-rwby-volume-4-chapter-1-the-next-step-rooster-teeth-cosplay-anime-ruby-others-miscellaneous-weapon.png
 - The Salem game over image is from https://ladygeekgirl.files.wordpress.com/2016/06/rwby-salem.png
 - The successful game image is from https://static.wikia.nocookie.net/rwby/images/2/2c/Team_RWBY_charges.jpeg/revision/latest?cb=20171029001801
+
+The fonts I have used for my site are ones I found on google fonts: Cuprum and STIX Two Math.
