@@ -26,11 +26,20 @@ function startGame(){
     score = 0;
     lifeLost = 0;
 
-    firstLife.removeAttribute('style', 'display:none');
-    secLife.removeAttribute('style', 'display:none');
-    lastLife.removeAttribute('style', 'display:none');
+    if(firstLife){
+        firstLife.removeAttribute('style', 'display:none');
+    }
 
-    questionsLeft = [...questions];
+    if(secLife){
+        secLife.removeAttribute('style', 'display:none');
+    }
+
+    if(lastLife){
+        lastLife.removeAttribute('style', 'display:none');
+    }
+
+        questionsLeft = [...questions];
+    
     nextQuestion();
 }
 
@@ -47,11 +56,15 @@ function nextQuestion(){
     questionCounter++;
 
     let questionNo = document.getElementById('questionNumber');
-    questionNo.innerText = `Question: ${questionCounter} of ${maxQuestions}`;
+    if(questionNo){
+        questionNo.innerText = `Question: ${questionCounter} of ${maxQuestions}`;
+    }
 
     const questIndex = Math.floor(Math.random() * questionsLeft.length);
         currentQuestion = questionsLeft[questIndex];
-        question.innerText = currentQuestion.question;
+        if(question){
+            question.innerText = currentQuestion.question;
+        }
 
         //this will add the corresposnding question's answers to the correct buttons
         answers.forEach( answer => {

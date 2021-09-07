@@ -161,6 +161,8 @@ Along with validators, I have passed the quiz through multiple different devices
 
 #### Script Check
 
+mention onclick and questions is global from above js file.
+
 ![Script JS Check](assets/images/validators/scriptJshint.png)
 
 ## Unfixed Bugs
