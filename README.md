@@ -1,3 +1,5 @@
+![RWBY Fan-Made Quiz Responsivity image](assets/images/rmScreenShots/amIRespo.png)
+
 # **RWBY Fan-Made Quiz**
 
 ## # Table of contents
@@ -161,7 +163,10 @@ Along with validators, I have passed the quiz through multiple different devices
 
 #### Script Check
 
-mention onclick and questions is global from above js file.
+In this JSHint validator image, there are a few unused or undefined variables;
+
+- The undefined variable is defined in the questions.js file in order to tidy up the writing for the JavaScript files.
+- The unused variables are not used directly in the JavaScript files, but refer to "onclick" event listeners that are added to elements in the index.html and game.html files.
 
 ![Script JS Check](assets/images/validators/scriptJshint.png)
 
