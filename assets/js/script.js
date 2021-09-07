@@ -135,7 +135,7 @@ function actualScore(){
     } else if(lifeLost === 1){
         score += onelifeBonus;
     } else {
-        score;
+        score += 0;
     }
 }
 
